@@ -23,6 +23,11 @@ class ViewController: UIViewController {
             print(response)
         }
         print("viewDidLoad ended")
+        
+        RouteAPI.ticketIdRouteGet(id: "1") { (respose, error) in
+            print(respose)
+            print(respose?.trainNumber ?? "nan")
+        }
     }
 
 }

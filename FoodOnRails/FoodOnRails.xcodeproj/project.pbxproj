@@ -3,11 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		22740EDC8BEC81B7542CD878 /* Pods_FoodOnRails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D294D2D34B2794061541951A /* Pods_FoodOnRails.framework */; };
+		5FA4A5B8233E922E00084A33 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5A0233E922E00084A33 /* APIHelper.swift */; };
+		5FA4A5B9233E922E00084A33 /* AlamofireImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5A1233E922E00084A33 /* AlamofireImplementations.swift */; };
+		5FA4A5BA233E922E00084A33 /* OrderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5A3233E922E00084A33 /* OrderAPI.swift */; };
+		5FA4A5BB233E922E00084A33 /* RouteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5A4233E922E00084A33 /* RouteAPI.swift */; };
+		5FA4A5BC233E922E00084A33 /* TicketAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5A5233E922E00084A33 /* TicketAPI.swift */; };
+		5FA4A5BD233E922E00084A33 /* CodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5A6233E922E00084A33 /* CodableHelper.swift */; };
+		5FA4A5BE233E922E00084A33 /* JSONEncodableEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5A7233E922E00084A33 /* JSONEncodableEncoding.swift */; };
+		5FA4A5BF233E922E00084A33 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5A8233E922E00084A33 /* APIs.swift */; };
+		5FA4A5C0233E922E00084A33 /* OrderCreateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5AA233E922E00084A33 /* OrderCreateResponse.swift */; };
+		5FA4A5C1233E922E00084A33 /* OrderStatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5AB233E922E00084A33 /* OrderStatusResponse.swift */; };
+		5FA4A5C2233E922E00084A33 /* OrderRequestOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5AC233E922E00084A33 /* OrderRequestOrder.swift */; };
+		5FA4A5C3233E922E00084A33 /* CafeDishResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5AD233E922E00084A33 /* CafeDishResponse.swift */; };
+		5FA4A5C4233E922E00084A33 /* CafeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5AE233E922E00084A33 /* CafeResponse.swift */; };
+		5FA4A5C5233E922E00084A33 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5AF233E922E00084A33 /* OrderItem.swift */; };
+		5FA4A5C6233E922E00084A33 /* RouteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5B0233E922E00084A33 /* RouteResponse.swift */; };
+		5FA4A5C7233E922E00084A33 /* OrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5B1233E922E00084A33 /* OrderRequest.swift */; };
+		5FA4A5C8233E922E00084A33 /* RouteResponseStops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5B2233E922E00084A33 /* RouteResponseStops.swift */; };
+		5FA4A5C9233E922E00084A33 /* OrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5B3233E922E00084A33 /* OrderResponse.swift */; };
+		5FA4A5CA233E922E00084A33 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5B4233E922E00084A33 /* Extensions.swift */; };
+		5FA4A5CB233E922E00084A33 /* JSONEncodingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5B5233E922E00084A33 /* JSONEncodingHelper.swift */; };
+		5FA4A5CC233E922E00084A33 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5B6233E922E00084A33 /* Models.swift */; };
+		5FA4A5CD233E922E00084A33 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4A5B7233E922E00084A33 /* Configuration.swift */; };
 		5FD746F3233E452800E5E4AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD746F2233E452800E5E4AD /* AppDelegate.swift */; };
 		5FD746F5233E452800E5E4AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD746F4233E452800E5E4AD /* SceneDelegate.swift */; };
 		5FD746F7233E452900E5E4AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD746F6233E452900E5E4AD /* ViewController.swift */; };
@@ -42,6 +64,28 @@
 		21D37FCBE9DDA44C3EDCD679 /* Pods_FoodOnRailsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodOnRailsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4379C0AC9CB4131A36973541 /* Pods-FoodOnRailsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodOnRailsUITests.debug.xcconfig"; path = "Target Support Files/Pods-FoodOnRailsUITests/Pods-FoodOnRailsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		541CEF8F9945F4A0C54024F8 /* Pods-FoodOnRailsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodOnRailsUITests.release.xcconfig"; path = "Target Support Files/Pods-FoodOnRailsUITests/Pods-FoodOnRailsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5FA4A5A0233E922E00084A33 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		5FA4A5A1233E922E00084A33 /* AlamofireImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireImplementations.swift; sourceTree = "<group>"; };
+		5FA4A5A3233E922E00084A33 /* OrderAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderAPI.swift; sourceTree = "<group>"; };
+		5FA4A5A4233E922E00084A33 /* RouteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteAPI.swift; sourceTree = "<group>"; };
+		5FA4A5A5233E922E00084A33 /* TicketAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketAPI.swift; sourceTree = "<group>"; };
+		5FA4A5A6233E922E00084A33 /* CodableHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableHelper.swift; sourceTree = "<group>"; };
+		5FA4A5A7233E922E00084A33 /* JSONEncodableEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodableEncoding.swift; sourceTree = "<group>"; };
+		5FA4A5A8233E922E00084A33 /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		5FA4A5AA233E922E00084A33 /* OrderCreateResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCreateResponse.swift; sourceTree = "<group>"; };
+		5FA4A5AB233E922E00084A33 /* OrderStatusResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderStatusResponse.swift; sourceTree = "<group>"; };
+		5FA4A5AC233E922E00084A33 /* OrderRequestOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderRequestOrder.swift; sourceTree = "<group>"; };
+		5FA4A5AD233E922E00084A33 /* CafeDishResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeDishResponse.swift; sourceTree = "<group>"; };
+		5FA4A5AE233E922E00084A33 /* CafeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeResponse.swift; sourceTree = "<group>"; };
+		5FA4A5AF233E922E00084A33 /* OrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		5FA4A5B0233E922E00084A33 /* RouteResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteResponse.swift; sourceTree = "<group>"; };
+		5FA4A5B1233E922E00084A33 /* OrderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderRequest.swift; sourceTree = "<group>"; };
+		5FA4A5B2233E922E00084A33 /* RouteResponseStops.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteResponseStops.swift; sourceTree = "<group>"; };
+		5FA4A5B3233E922E00084A33 /* OrderResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderResponse.swift; sourceTree = "<group>"; };
+		5FA4A5B4233E922E00084A33 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5FA4A5B5233E922E00084A33 /* JSONEncodingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodingHelper.swift; sourceTree = "<group>"; };
+		5FA4A5B6233E922E00084A33 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		5FA4A5B7233E922E00084A33 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		5FD746EF233E452800E5E4AD /* FoodOnRails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodOnRails.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD746F2233E452800E5E4AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FD746F4233E452800E5E4AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,8 +145,53 @@
 				4379C0AC9CB4131A36973541 /* Pods-FoodOnRailsUITests.debug.xcconfig */,
 				541CEF8F9945F4A0C54024F8 /* Pods-FoodOnRailsUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		5FA4A59F233E922E00084A33 /* Swaggers */ = {
+			isa = PBXGroup;
+			children = (
+				5FA4A5A0233E922E00084A33 /* APIHelper.swift */,
+				5FA4A5A1233E922E00084A33 /* AlamofireImplementations.swift */,
+				5FA4A5A2233E922E00084A33 /* APIs */,
+				5FA4A5A6233E922E00084A33 /* CodableHelper.swift */,
+				5FA4A5A7233E922E00084A33 /* JSONEncodableEncoding.swift */,
+				5FA4A5A8233E922E00084A33 /* APIs.swift */,
+				5FA4A5A9233E922E00084A33 /* Models */,
+				5FA4A5B4233E922E00084A33 /* Extensions.swift */,
+				5FA4A5B5233E922E00084A33 /* JSONEncodingHelper.swift */,
+				5FA4A5B6233E922E00084A33 /* Models.swift */,
+				5FA4A5B7233E922E00084A33 /* Configuration.swift */,
+			);
+			name = Swaggers;
+			path = ../../../../Swager/samples/client/SwaggerClient/Classes/Swaggers;
+			sourceTree = "<group>";
+		};
+		5FA4A5A2233E922E00084A33 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				5FA4A5A3233E922E00084A33 /* OrderAPI.swift */,
+				5FA4A5A4233E922E00084A33 /* RouteAPI.swift */,
+				5FA4A5A5233E922E00084A33 /* TicketAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		5FA4A5A9233E922E00084A33 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5FA4A5AA233E922E00084A33 /* OrderCreateResponse.swift */,
+				5FA4A5AB233E922E00084A33 /* OrderStatusResponse.swift */,
+				5FA4A5AC233E922E00084A33 /* OrderRequestOrder.swift */,
+				5FA4A5AD233E922E00084A33 /* CafeDishResponse.swift */,
+				5FA4A5AE233E922E00084A33 /* CafeResponse.swift */,
+				5FA4A5AF233E922E00084A33 /* OrderItem.swift */,
+				5FA4A5B0233E922E00084A33 /* RouteResponse.swift */,
+				5FA4A5B1233E922E00084A33 /* OrderRequest.swift */,
+				5FA4A5B2233E922E00084A33 /* RouteResponseStops.swift */,
+				5FA4A5B3233E922E00084A33 /* OrderResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		5FD746E6233E452800E5E4AD = {
@@ -130,6 +219,7 @@
 		5FD746F1233E452800E5E4AD /* FoodOnRails */ = {
 			isa = PBXGroup;
 			children = (
+				5FA4A59F233E922E00084A33 /* Swaggers */,
 				5FD746F2233E452800E5E4AD /* AppDelegate.swift */,
 				5FD746F4233E452800E5E4AD /* SceneDelegate.swift */,
 				5FD746F6233E452900E5E4AD /* ViewController.swift */,
@@ -390,9 +480,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FA4A5BE233E922E00084A33 /* JSONEncodableEncoding.swift in Sources */,
+				5FA4A5BC233E922E00084A33 /* TicketAPI.swift in Sources */,
+				5FA4A5B8233E922E00084A33 /* APIHelper.swift in Sources */,
+				5FA4A5CC233E922E00084A33 /* Models.swift in Sources */,
 				5FD746F7233E452900E5E4AD /* ViewController.swift in Sources */,
+				5FA4A5C9233E922E00084A33 /* OrderResponse.swift in Sources */,
 				5FD746F3233E452800E5E4AD /* AppDelegate.swift in Sources */,
+				5FA4A5BF233E922E00084A33 /* APIs.swift in Sources */,
+				5FA4A5C8233E922E00084A33 /* RouteResponseStops.swift in Sources */,
+				5FA4A5BA233E922E00084A33 /* OrderAPI.swift in Sources */,
+				5FA4A5CA233E922E00084A33 /* Extensions.swift in Sources */,
+				5FA4A5CD233E922E00084A33 /* Configuration.swift in Sources */,
+				5FA4A5C0233E922E00084A33 /* OrderCreateResponse.swift in Sources */,
+				5FA4A5C6233E922E00084A33 /* RouteResponse.swift in Sources */,
+				5FA4A5BB233E922E00084A33 /* RouteAPI.swift in Sources */,
+				5FA4A5C7233E922E00084A33 /* OrderRequest.swift in Sources */,
+				5FA4A5C2233E922E00084A33 /* OrderRequestOrder.swift in Sources */,
 				5FD746F5233E452800E5E4AD /* SceneDelegate.swift in Sources */,
+				5FA4A5C4233E922E00084A33 /* CafeResponse.swift in Sources */,
+				5FA4A5CB233E922E00084A33 /* JSONEncodingHelper.swift in Sources */,
+				5FA4A5C1233E922E00084A33 /* OrderStatusResponse.swift in Sources */,
+				5FA4A5C3233E922E00084A33 /* CafeDishResponse.swift in Sources */,
+				5FA4A5BD233E922E00084A33 /* CodableHelper.swift in Sources */,
+				5FA4A5B9233E922E00084A33 /* AlamofireImplementations.swift in Sources */,
+				5FA4A5C5233E922E00084A33 /* OrderItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
