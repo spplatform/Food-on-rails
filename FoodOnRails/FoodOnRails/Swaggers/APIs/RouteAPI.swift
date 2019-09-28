@@ -34,15 +34,17 @@ public class RouteAPI {
     "duration" : 0,
     "date_time" : "2000-01-23T04:56:07.000+00:00",
     "cafes" : [ {
+      "minimum_price" : 6,
       "name" : "name",
+      "cuisine" : "cuisine",
       "positions" : [ {
-        "price" : 6,
+        "price" : 1,
         "image_url" : "image_url",
         "name" : "name",
         "description" : "description",
         "id" : "id"
       }, {
-        "price" : 6,
+        "price" : 1,
         "image_url" : "image_url",
         "name" : "name",
         "description" : "description",
@@ -51,15 +53,17 @@ public class RouteAPI {
       "id" : "id",
       "city_id" : "city_id"
     }, {
+      "minimum_price" : 6,
       "name" : "name",
+      "cuisine" : "cuisine",
       "positions" : [ {
-        "price" : 6,
+        "price" : 1,
         "image_url" : "image_url",
         "name" : "name",
         "description" : "description",
         "id" : "id"
       }, {
-        "price" : 6,
+        "price" : 1,
         "image_url" : "image_url",
         "name" : "name",
         "description" : "description",
@@ -74,15 +78,17 @@ public class RouteAPI {
     "duration" : 0,
     "date_time" : "2000-01-23T04:56:07.000+00:00",
     "cafes" : [ {
+      "minimum_price" : 6,
       "name" : "name",
+      "cuisine" : "cuisine",
       "positions" : [ {
-        "price" : 6,
+        "price" : 1,
         "image_url" : "image_url",
         "name" : "name",
         "description" : "description",
         "id" : "id"
       }, {
-        "price" : 6,
+        "price" : 1,
         "image_url" : "image_url",
         "name" : "name",
         "description" : "description",
@@ -91,15 +97,17 @@ public class RouteAPI {
       "id" : "id",
       "city_id" : "city_id"
     }, {
+      "minimum_price" : 6,
       "name" : "name",
+      "cuisine" : "cuisine",
       "positions" : [ {
-        "price" : 6,
+        "price" : 1,
         "image_url" : "image_url",
         "name" : "name",
         "description" : "description",
         "id" : "id"
       }, {
-        "price" : 6,
+        "price" : 1,
         "image_url" : "image_url",
         "name" : "name",
         "description" : "description",
@@ -154,15 +162,17 @@ public class RouteAPI {
     "duration" : 0,
     "date_time" : "2000-01-23T04:56:07.000+00:00",
     "cafes" : [ {
+      "minimum_price" : 6,
       "name" : "name",
+      "cuisine" : "cuisine",
       "positions" : [ {
-        "price" : 6,
+        "price" : 1,
         "image_url" : "image_url",
         "name" : "name",
         "description" : "description",
         "id" : "id"
       }, {
-        "price" : 6,
+        "price" : 1,
         "image_url" : "image_url",
         "name" : "name",
         "description" : "description",
@@ -171,15 +181,17 @@ public class RouteAPI {
       "id" : "id",
       "city_id" : "city_id"
     }, {
+      "minimum_price" : 6,
       "name" : "name",
+      "cuisine" : "cuisine",
       "positions" : [ {
-        "price" : 6,
+        "price" : 1,
         "image_url" : "image_url",
         "name" : "name",
         "description" : "description",
         "id" : "id"
       }, {
-        "price" : 6,
+        "price" : 1,
         "image_url" : "image_url",
         "name" : "name",
         "description" : "description",
@@ -194,15 +206,17 @@ public class RouteAPI {
     "duration" : 0,
     "date_time" : "2000-01-23T04:56:07.000+00:00",
     "cafes" : [ {
+      "minimum_price" : 6,
       "name" : "name",
+      "cuisine" : "cuisine",
       "positions" : [ {
-        "price" : 6,
+        "price" : 1,
         "image_url" : "image_url",
         "name" : "name",
         "description" : "description",
         "id" : "id"
       }, {
-        "price" : 6,
+        "price" : 1,
         "image_url" : "image_url",
         "name" : "name",
         "description" : "description",
@@ -211,15 +225,17 @@ public class RouteAPI {
       "id" : "id",
       "city_id" : "city_id"
     }, {
+      "minimum_price" : 6,
       "name" : "name",
+      "cuisine" : "cuisine",
       "positions" : [ {
-        "price" : 6,
+        "price" : 1,
         "image_url" : "image_url",
         "name" : "name",
         "description" : "description",
         "id" : "id"
       }, {
-        "price" : 6,
+        "price" : 1,
         "image_url" : "image_url",
         "name" : "name",
         "description" : "description",

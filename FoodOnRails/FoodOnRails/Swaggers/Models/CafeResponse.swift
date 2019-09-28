@@ -14,14 +14,18 @@ public class CafeResponse: Codable {
     public var id: String
     public var name: String
     public var cityId: String
+    public var cuisine: String?
+    public var minimumPrice: Int?
     public var positions: [CafeDishResponse]
 
 
     
-    public init(id: String, name: String, cityId: String, positions: [CafeDishResponse]) {
+    public init(id: String, name: String, cityId: String, cuisine: String?, minimumPrice: Int?, positions: [CafeDishResponse]) {
         self.id = id
         self.name = name
         self.cityId = cityId
+        self.cuisine = cuisine
+        self.minimumPrice = minimumPrice
         self.positions = positions
     }
     
@@ -35,6 +39,8 @@ public class CafeResponse: Codable {
         try container.encode(id, forKey: "id")
         try container.encode(name, forKey: "name")
         try container.encode(cityId, forKey: "city_id")
+        try container.encodeIfPresent(cuisine, forKey: "cuisine")
+        try container.encodeIfPresent(minimumPrice, forKey: "minimum_price")
         try container.encode(positions, forKey: "positions")
     }
 
@@ -46,6 +52,8 @@ public class CafeResponse: Codable {
         id = try container.decode(String.self, forKey: "id")
         name = try container.decode(String.self, forKey: "name")
         cityId = try container.decode(String.self, forKey: "city_id")
+        cuisine = try container.decodeIfPresent(String.self, forKey: "cuisine")
+        minimumPrice = try container.decodeIfPresent(Int.self, forKey: "minimum_price")
         positions = try container.decode([CafeDishResponse].self, forKey: "positions")
     }
 }
