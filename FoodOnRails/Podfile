@@ -10,6 +10,7 @@ target 'FoodOnRails' do
   pod 'RealmSwift'
   pod 'SwiftyJSON'
   pod 'SVProgressHUD'
+  pod 'BarcodeScanner'
 
   # Pods for FoodOnRails
 

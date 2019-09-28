@@ -52,7 +52,7 @@
                                     <segue destination="qDp-A7-MpD" kind="show" id="ah3-lV-Qzs"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Укажите номер билета" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wp0-zp-vDW">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Укажите номер билета" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wp0-zp-vDW">
                                 <rect key="frame" x="64" y="608" width="286" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
@@ -65,11 +65,15 @@
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4C-Rl-Okx" userLabel="Camera">
-                                <rect key="frame" x="336" y="673" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4C-Rl-Okx" userLabel="Camera">
+                                <rect key="frame" x="336" y="675" width="30" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="btnCamera"/>
+                                <connections>
+                                    <action selector="handleScannerPresent:forEvent:" destination="j5f-XH-Ikw" eventType="touchUpInside" id="fuQ-v9-lmb"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWZ-Xo-9iC">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWZ-Xo-9iC">
                                 <rect key="frame" x="40" y="741" width="334" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Ок">
@@ -90,6 +94,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="h1j-lg-vk7"/>
                     </view>
+                    <connections>
+                        <outlet property="cameraBtn" destination="n4C-Rl-Okx" id="LW3-Hl-irB"/>
+                        <outlet property="okBtn" destination="zWZ-Xo-9iC" id="AIj-d2-fYh"/>
+                        <outlet property="ticketNumber" destination="3g8-fB-7fQ" id="2PV-Zx-NwP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0rM-0W-WT2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -395,5 +404,6 @@
         <image name="Restaurants" width="375" height="812"/>
         <image name="Route" width="375" height="812"/>
         <image name="Ticket" width="375" height="812"/>
+        <image name="btnCamera" width="30" height="26"/>
     </resources>
 </document>
