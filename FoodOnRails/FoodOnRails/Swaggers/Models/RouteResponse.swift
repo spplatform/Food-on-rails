@@ -12,12 +12,14 @@ import Foundation
 public class RouteResponse: Codable {
 
     public var trainNumber: String
+    public var trainName: String?
     public var stops: [RouteResponseStops]
 
 
     
-    public init(trainNumber: String, stops: [RouteResponseStops]) {
+    public init(trainNumber: String, trainName: String?, stops: [RouteResponseStops]) {
         self.trainNumber = trainNumber
+        self.trainName = trainName
         self.stops = stops
     }
     
@@ -29,6 +31,7 @@ public class RouteResponse: Codable {
         var container = encoder.container(keyedBy: String.self)
 
         try container.encode(trainNumber, forKey: "train_number")
+        try container.encodeIfPresent(trainName, forKey: "train_name")
         try container.encode(stops, forKey: "stops")
     }
 
@@ -38,6 +41,7 @@ public class RouteResponse: Codable {
         let container = try decoder.container(keyedBy: String.self)
 
         trainNumber = try container.decode(String.self, forKey: "train_number")
+        trainName = try container.decodeIfPresent(String.self, forKey: "train_name")
         stops = try container.decode([RouteResponseStops].self, forKey: "stops")
     }
 }

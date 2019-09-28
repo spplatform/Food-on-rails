@@ -13,14 +13,16 @@ public class CafeDishResponse: Codable {
 
     public var id: String
     public var name: String
+    public var description: String?
     public var price: Int
     public var imageUrl: String
 
 
     
-    public init(id: String, name: String, price: Int, imageUrl: String) {
+    public init(id: String, name: String, description: String?, price: Int, imageUrl: String) {
         self.id = id
         self.name = name
+        self.description = description
         self.price = price
         self.imageUrl = imageUrl
     }
@@ -34,6 +36,7 @@ public class CafeDishResponse: Codable {
 
         try container.encode(id, forKey: "id")
         try container.encode(name, forKey: "name")
+        try container.encodeIfPresent(description, forKey: "description")
         try container.encode(price, forKey: "price")
         try container.encode(imageUrl, forKey: "image_url")
     }
@@ -45,6 +48,7 @@ public class CafeDishResponse: Codable {
 
         id = try container.decode(String.self, forKey: "id")
         name = try container.decode(String.self, forKey: "name")
+        description = try container.decodeIfPresent(String.self, forKey: "description")
         price = try container.decode(Int.self, forKey: "price")
         imageUrl = try container.decode(String.self, forKey: "image_url")
     }

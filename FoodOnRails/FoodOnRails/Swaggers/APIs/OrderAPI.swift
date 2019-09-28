@@ -101,7 +101,7 @@ public class OrderAPI {
     /**
      create order
      
-     - parameter body: (body) The GitHub API url to call 
+     - parameter body: (body) Order data 
      - parameter completion: completion handler to receive the data and the error objects
      */
     public class func orderPost(body: OrderRequest, completion: @escaping ((_ data: OrderCreateResponse?,_ error: Error?) -> Void)) {
@@ -115,8 +115,8 @@ public class OrderAPI {
      create order
      - POST /order
      - examples: [{contentType=application/json, example={
-  "payment_url" : "payment_url",
   "coupon" : "coupon",
+  "payment_id" : "payment_id",
   "positions" : [ {
     "amount" : 0,
     "total_price" : 6,
@@ -130,7 +130,7 @@ public class OrderAPI {
   "status" : "status"
 }}]
      
-     - parameter body: (body) The GitHub API url to call 
+     - parameter body: (body) Order data 
 
      - returns: RequestBuilder<OrderCreateResponse> 
      */

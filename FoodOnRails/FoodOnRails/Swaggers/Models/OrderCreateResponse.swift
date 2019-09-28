@@ -12,16 +12,16 @@ import Foundation
 public class OrderCreateResponse: Codable {
 
     public var id: String
-    public var paymentUrl: String
+    public var paymentId: String
     public var status: String
     public var coupon: String?
     public var positions: [OrderItem]
 
 
     
-    public init(id: String, paymentUrl: String, status: String, coupon: String?, positions: [OrderItem]) {
+    public init(id: String, paymentId: String, status: String, coupon: String?, positions: [OrderItem]) {
         self.id = id
-        self.paymentUrl = paymentUrl
+        self.paymentId = paymentId
         self.status = status
         self.coupon = coupon
         self.positions = positions
@@ -35,7 +35,7 @@ public class OrderCreateResponse: Codable {
         var container = encoder.container(keyedBy: String.self)
 
         try container.encode(id, forKey: "id")
-        try container.encode(paymentUrl, forKey: "payment_url")
+        try container.encode(paymentId, forKey: "payment_id")
         try container.encode(status, forKey: "status")
         try container.encodeIfPresent(coupon, forKey: "coupon")
         try container.encode(positions, forKey: "positions")
@@ -47,7 +47,7 @@ public class OrderCreateResponse: Codable {
         let container = try decoder.container(keyedBy: String.self)
 
         id = try container.decode(String.self, forKey: "id")
-        paymentUrl = try container.decode(String.self, forKey: "payment_url")
+        paymentId = try container.decode(String.self, forKey: "payment_id")
         status = try container.decode(String.self, forKey: "status")
         coupon = try container.decodeIfPresent(String.self, forKey: "coupon")
         positions = try container.decode([OrderItem].self, forKey: "positions")
