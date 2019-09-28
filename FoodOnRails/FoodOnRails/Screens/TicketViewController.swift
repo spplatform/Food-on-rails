@@ -52,10 +52,8 @@ class TicketViewController: UIViewController {
 
     
     func routRequest(for tickeitId: String) {
-        RouteAPI.ticketIdRouteGet(id: tickeitId) {[weak self] (respose, error) in
-            print("request")
+        RouteAPI.routeTicketIdGet(id: tickeitId) {[weak self] (respose, error) in
             self?.routeRespone = respose
-            print(respose?.trainNumber ?? "nan")
             self?.performSegue(withIdentifier: "openRoute", sender: self)
         }
     }
@@ -67,8 +65,6 @@ extension TicketViewController: BarcodeScannerCodeDelegate {
     func scanner(_ controller: BarcodeScannerViewController, didCaptureCode code: String, type: String) {
         ticketId = code
         ticketNumber.text = code
-        print("Barcode Data: \(code)")
-        print("Symbology Type: \(type)")
         controller.dismiss(animated: true, completion: nil)
     }
 }

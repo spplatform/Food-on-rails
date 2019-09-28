@@ -93,6 +93,14 @@
                                     <constraint firstAttribute="height" constant="246" id="025-Ns-kRx"/>
                                 </constraints>
                             </view>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="z97-eq-Yxb">
+                                <rect key="frame" x="56" y="648" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="z97-eq-Yxb" id="8bB-9O-Gaj">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -181,7 +189,7 @@
             </objects>
             <point key="canvasLocation" x="1687" y="-560"/>
         </scene>
-        <!--Ваш поезд-->
+        <!--Расписание-->
         <scene sceneID="jFH-Ij-KE0">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="AH7-aF-z54" customClass="RouteViewController" customModule="FoodOnRails" customModuleProvider="target" sceneMemberID="viewController">
@@ -199,19 +207,24 @@
                                     <segue destination="TLl-TS-YNB" kind="show" id="4ev-7m-pMp"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tmj-Mq-9J8">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tmj-Mq-9J8">
                                 <rect key="frame" x="0.0" y="56" width="414" height="752"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="Drd-HG-da9">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RouteTableViewCell" id="qm4-FL-sJy" customClass="RouteTableViewCell" customModule="FoodOnRails" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="72.5"/>
+                                        <rect key="frame" x="0.0" y="72" width="414" height="72"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qm4-FL-sJy" id="YgR-Kq-FfY">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="72.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXi-g1-uAW">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="72.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="72"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imgSelectedPin" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AiH-6o-69L">
                                                             <rect key="frame" x="20" y="0.0" width="27" height="27"/>
@@ -272,6 +285,9 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="delegate" destination="AH7-aF-z54" id="EbZ-md-k39"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -287,19 +303,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="a5G-WW-moh"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Ваш поезд" id="DVO-VZ-u6Z"/>
+                    <navigationItem key="navigationItem" title="Расписание" id="DVO-VZ-u6Z"/>
                     <connections>
                         <outlet property="tableView" destination="tmj-Mq-9J8" id="c6S-gk-dkH"/>
+                        <segue destination="TLl-TS-YNB" kind="show" identifier="openStation" id="3Rr-R8-B75"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1eC-rj-NqA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1686.9565217391305" y="137.94642857142856"/>
         </scene>
-        <!--Menu View Controller-->
+        <!--Рестораны-->
         <scene sceneID="nax-Rq-c3d">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="TLl-TS-YNB" customClass="MenuViewController" customModule="FoodOnRails" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="TLl-TS-YNB" customClass="StationViewController" customModule="FoodOnRails" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YAg-cl-hOr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -310,30 +327,105 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2N-dn-XNI">
                                 <rect key="frame" x="0.0" y="39" width="414" height="818"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="QfN-N6-4PD" kind="show" id="PQL-Kr-KOu"/>
-                                </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="210" estimatedRowHeight="210" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MFA-cR-Q7c">
+                                <rect key="frame" x="0.0" y="56" width="414" height="752"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CafeTableViewCell" rowHeight="210" id="Y2h-zz-wCF" customClass="CafeTableViewCell" customModule="FoodOnRails" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="210"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y2h-zz-wCF" id="LD0-3G-0d5">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="210"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrG-U2-p6g">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="210"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gMs-DF-ldh">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="134"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="134" id="41c-Ms-yz0"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Пельменная Лепи Тесто" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyq-3U-sGd">
+                                                            <rect key="frame" x="8" y="142" width="202" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Европейская, Русская" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wta-A5-RFq">
+                                                            <rect key="frame" x="8" y="189" width="177" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <color key="textColor" red="0.45882352941176469" green="0.51764705882352935" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Заказ от 0 ₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pda-Df-qHS">
+                                                            <rect key="frame" x="8" y="171" width="101" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="gMs-DF-ldh" firstAttribute="top" secondItem="BrG-U2-p6g" secondAttribute="top" id="FFr-s9-9mG"/>
+                                                        <constraint firstAttribute="trailing" secondItem="gMs-DF-ldh" secondAttribute="trailing" id="q28-rA-k3R"/>
+                                                        <constraint firstItem="gMs-DF-ldh" firstAttribute="leading" secondItem="BrG-U2-p6g" secondAttribute="leading" id="yjl-Fp-tzM"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="BrG-U2-p6g" secondAttribute="trailing" id="70N-3Z-s7b"/>
+                                                <constraint firstItem="BrG-U2-p6g" firstAttribute="top" secondItem="LD0-3G-0d5" secondAttribute="top" id="Y5g-yF-gHI"/>
+                                                <constraint firstItem="BrG-U2-p6g" firstAttribute="leading" secondItem="LD0-3G-0d5" secondAttribute="leading" id="ene-Ff-zJq"/>
+                                                <constraint firstAttribute="bottom" secondItem="BrG-U2-p6g" secondAttribute="bottom" id="s7M-a5-DN6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cafeName" destination="pyq-3U-sGd" id="1rC-Ba-pxm"/>
+                                            <outlet property="kitchenType" destination="Wta-A5-RFq" id="h3b-qM-5E0"/>
+                                            <outlet property="logo" destination="gMs-DF-ldh" id="eAn-MZ-jST"/>
+                                            <outlet property="minOrder" destination="Pda-Df-qHS" id="1Wp-6O-VMU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="TLl-TS-YNB" id="1nw-dB-h3j"/>
+                                    <outlet property="delegate" destination="TLl-TS-YNB" id="0fn-gP-dAK"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="ocK-kF-YLK" secondAttribute="bottom" id="AKs-x0-WjE"/>
                             <constraint firstItem="ocK-kF-YLK" firstAttribute="top" secondItem="YAg-cl-hOr" secondAttribute="top" id="WRb-MI-nxE"/>
+                            <constraint firstItem="A0i-kT-sdd" firstAttribute="bottom" secondItem="MFA-cR-Q7c" secondAttribute="bottom" id="qdY-8P-aFt"/>
+                            <constraint firstItem="A0i-kT-sdd" firstAttribute="trailing" secondItem="MFA-cR-Q7c" secondAttribute="trailing" id="rUW-1P-JOr"/>
                             <constraint firstItem="ocK-kF-YLK" firstAttribute="leading" secondItem="YAg-cl-hOr" secondAttribute="leading" id="riJ-c3-IbI"/>
+                            <constraint firstItem="MFA-cR-Q7c" firstAttribute="top" secondItem="A0i-kT-sdd" secondAttribute="top" id="tDS-s6-6RI"/>
+                            <constraint firstItem="MFA-cR-Q7c" firstAttribute="leading" secondItem="A0i-kT-sdd" secondAttribute="leading" id="vHH-Nm-u78"/>
                             <constraint firstAttribute="trailing" secondItem="ocK-kF-YLK" secondAttribute="trailing" id="z1G-qH-ipD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="A0i-kT-sdd"/>
                     </view>
-                    <navigationItem key="navigationItem" id="o2Y-za-Jqs"/>
+                    <navigationItem key="navigationItem" title="Рестораны" id="o2Y-za-Jqs"/>
+                    <connections>
+                        <outlet property="tableView" destination="MFA-cR-Q7c" id="FEg-Xu-V5f"/>
+                        <segue destination="QfN-N6-4PD" kind="show" identifier="openMenu" id="eS2-xw-OGR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gVo-z8-93i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2357" y="136"/>
         </scene>
-        <!--View Controller-->
+        <!--Меню-->
         <scene sceneID="LZT-kA-gsT">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="QfN-N6-4PD" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="QfN-N6-4PD" customClass="MenuViewController" customModule="FoodOnRails" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S7s-UR-7Vf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -358,7 +450,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qkK-Ou-v7O"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dG6-6l-wAH"/>
+                    <navigationItem key="navigationItem" title="Меню" id="dG6-6l-wAH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OgJ-dy-a0p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -398,7 +490,7 @@
             </objects>
             <point key="canvasLocation" x="3712" y="136"/>
         </scene>
-        <!--Cart View Controller-->
+        <!--Корзина-->
         <scene sceneID="CTu-LT-aRG">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="g8p-vZ-ggh" customClass="CartViewController" customModule="FoodOnRails" customModuleProvider="target" sceneMemberID="viewController">
@@ -426,13 +518,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bp4-5w-wNU"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2Yy-Lq-sfn"/>
+                    <navigationItem key="navigationItem" title="Корзина" id="2Yy-Lq-sfn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vhR-p5-Vmj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4458" y="138"/>
         </scene>
-        <!--Order View Controller-->
+        <!--Оплата-->
         <scene sceneID="c9i-NR-Xjb">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Bl3-mk-u3W" customClass="OrderViewController" customModule="FoodOnRails" customModuleProvider="target" sceneMemberID="viewController">
@@ -460,13 +552,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K9r-vm-cDI"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dlL-ty-Wqd"/>
+                    <navigationItem key="navigationItem" title="Оплата" id="dlL-ty-Wqd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N9b-yu-9bO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5194" y="138"/>
         </scene>
-        <!--Payment View Controller-->
+        <!--Заказ-->
         <scene sceneID="agS-Uu-Gc8">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Pf5-eU-vag" customClass="PaymentViewController" customModule="FoodOnRails" customModuleProvider="target" sceneMemberID="viewController">
@@ -487,7 +579,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yjH-4N-uwD"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Y8x-s6-1Ks"/>
+                    <navigationItem key="navigationItem" title="Заказ" id="Y8x-s6-1Ks"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IhJ-Q7-1Ru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -504,4 +596,7 @@
         <image name="btnCamera" width="30" height="26"/>
         <image name="imgSelectedPin" width="27" height="27"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="3Rr-R8-B75"/>
+    </inferredMetricsTieBreakers>
 </document>

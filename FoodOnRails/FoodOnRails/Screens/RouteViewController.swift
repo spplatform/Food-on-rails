@@ -13,7 +13,7 @@ class RouteViewController: UIViewController, UITableViewDataSource, UITableViewD
     @IBOutlet var tableView: UITableView!
     
     var routeRespone: RouteResponse?
-    
+    var selectedRouteResponseStops: RouteResponseStops?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +61,19 @@ class RouteViewController: UIViewController, UITableViewDataSource, UITableViewD
 //            cell.accessoryType = .none
 //        }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedRouteResponseStops = self.routeRespone?.stops[indexPath.row]
+        self.performSegue(withIdentifier: "openStation", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "openStation" {
+            if let destinationVC = segue.destination as? StationViewController {
+                destinationVC.routeResponseStops = selectedRouteResponseStops
+            }
+        }
     }
 }
 
