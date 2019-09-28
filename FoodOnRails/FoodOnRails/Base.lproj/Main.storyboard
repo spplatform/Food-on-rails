@@ -31,10 +31,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
         </scene>
-        <!--View Controller-->
+        <!--Ticket View Controller-->
         <scene sceneID="5oo-p1-8HE">
             <objects>
-                <viewController id="j5f-XH-Ikw" sceneMemberID="viewController">
+                <viewController id="j5f-XH-Ikw" customClass="TicketViewController" customModule="FoodOnRails" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kzW-zt-NRv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,11 +42,39 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ticket" translatesAutoresizingMaskIntoConstraints="NO" id="K2i-eB-67v" userLabel="Background Image View">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGc-28-kUZ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Ticket" translatesAutoresizingMaskIntoConstraints="NO" id="tHi-Cu-6q6" userLabel="Logo Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGc-28-kUZ" userLabel="Main Button">
+                                <rect key="frame" x="0.0" y="54" width="414" height="818"/>
                                 <connections>
                                     <segue destination="AH7-aF-z54" kind="show" id="reQ-dO-BpB"/>
                                 </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Укажите номер билета" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wp0-zp-vDW">
+                                <rect key="frame" x="64" y="608" width="286" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="12345678910" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3g8-fB-7fQ">
+                                <rect key="frame" x="40" y="673" width="334" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4C-Rl-Okx" userLabel="Camera">
+                                <rect key="frame" x="336" y="673" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWZ-Xo-9iC">
+                                <rect key="frame" x="40" y="741" width="334" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ок">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -82,10 +110,55 @@
             </objects>
             <point key="canvasLocation" x="138" y="858"/>
         </scene>
-        <!--View Controller-->
+        <!--Root View Controller-->
+        <scene sceneID="AdJ-kK-qvQ">
+            <objects>
+                <tableViewController id="bQ7-iY-xJ3" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="JJo-W6-9Lj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="qBL-iZ-E6M">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qBL-iZ-E6M" id="6tw-WX-Tfq">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="bQ7-iY-xJ3" id="Hg8-Wm-jBW"/>
+                            <outlet property="delegate" destination="bQ7-iY-xJ3" id="x9l-aJ-mPn"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="rCe-VH-E2b"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kdN-qD-yZH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1687" y="-531"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2L4-f7-39Y">
+            <objects>
+                <navigationController id="qDp-A7-MpD" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6vg-4T-nUN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bQ7-iY-xJ3" kind="relationship" relationship="rootViewController" id="Yc9-vA-8Fp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bzO-zX-kGb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941" y="-531"/>
+        </scene>
+        <!--Route View Controller-->
         <scene sceneID="jFH-Ij-KE0">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="AH7-aF-z54" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="AH7-aF-z54" customClass="RouteViewController" customModule="FoodOnRails" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o3t-Vh-mYC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,10 +189,10 @@
             </objects>
             <point key="canvasLocation" x="1687" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="nax-Rq-c3d">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="TLl-TS-YNB" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="TLl-TS-YNB" customClass="MenuViewController" customModule="FoodOnRails" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YAg-cl-hOr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -218,10 +291,10 @@
             </objects>
             <point key="canvasLocation" x="3712" y="136"/>
         </scene>
-        <!--View Controller-->
+        <!--Cart View Controller-->
         <scene sceneID="CTu-LT-aRG">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="g8p-vZ-ggh" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="g8p-vZ-ggh" customClass="CartViewController" customModule="FoodOnRails" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Aia-NH-RQ0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -229,6 +302,13 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cart" translatesAutoresizingMaskIntoConstraints="NO" id="LW6-16-zlU" userLabel="Background Image View">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yYn-c2-GAg">
+                                <rect key="frame" x="0.0" y="39" width="414" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Bl3-mk-u3W" kind="show" id="bFc-yg-FAm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -243,7 +323,68 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vhR-p5-Vmj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4426" y="136"/>
+            <point key="canvasLocation" x="4458" y="138"/>
+        </scene>
+        <!--Order View Controller-->
+        <scene sceneID="c9i-NR-Xjb">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Bl3-mk-u3W" customClass="OrderViewController" customModule="FoodOnRails" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jxz-n3-gI5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cart" translatesAutoresizingMaskIntoConstraints="NO" id="hWd-d5-B2N" userLabel="Background Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uD-fa-myc">
+                                <rect key="frame" x="0.0" y="39" width="414" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="Pf5-eU-vag" kind="show" id="k95-zn-VGE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hWd-d5-B2N" firstAttribute="leading" secondItem="jxz-n3-gI5" secondAttribute="leading" id="LHd-OW-Zph"/>
+                            <constraint firstAttribute="bottom" secondItem="hWd-d5-B2N" secondAttribute="bottom" id="f7h-Qg-ZEn"/>
+                            <constraint firstAttribute="trailing" secondItem="hWd-d5-B2N" secondAttribute="trailing" id="qAt-r1-wX2"/>
+                            <constraint firstItem="hWd-d5-B2N" firstAttribute="top" secondItem="jxz-n3-gI5" secondAttribute="top" id="yT1-C9-Wet"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="K9r-vm-cDI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dlL-ty-Wqd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N9b-yu-9bO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5194" y="138"/>
+        </scene>
+        <!--Payment View Controller-->
+        <scene sceneID="agS-Uu-Gc8">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Pf5-eU-vag" customClass="PaymentViewController" customModule="FoodOnRails" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hcO-Tb-hug">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cart" translatesAutoresizingMaskIntoConstraints="NO" id="VTP-k8-eTM" userLabel="Background Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="VTP-k8-eTM" secondAttribute="bottom" id="DMA-Za-BQa"/>
+                            <constraint firstItem="VTP-k8-eTM" firstAttribute="leading" secondItem="hcO-Tb-hug" secondAttribute="leading" id="cD9-34-1Lq"/>
+                            <constraint firstItem="VTP-k8-eTM" firstAttribute="top" secondItem="hcO-Tb-hug" secondAttribute="top" id="hVJ-1U-kmH"/>
+                            <constraint firstAttribute="trailing" secondItem="VTP-k8-eTM" secondAttribute="trailing" id="rdA-8f-rF1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yjH-4N-uwD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Y8x-s6-1Ks"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IhJ-Q7-1Ru" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5877" y="138"/>
         </scene>
     </scenes>
     <resources>
