@@ -200,6 +200,7 @@
 		5FA4705E233F4C59004E5CA5 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				5FD746F8233E452900E5E4AD /* Main.storyboard */,
 				5FA4705F233F4C59004E5CA5 /* TicketViewController.swift */,
 				5FA47061233F563B004E5CA5 /* RouteViewController.swift */,
 				5FA47063233F5654004E5CA5 /* StationViewController.swift */,
@@ -260,7 +261,6 @@
 				5FD746F2233E452800E5E4AD /* AppDelegate.swift */,
 				5FD746F4233E452800E5E4AD /* SceneDelegate.swift */,
 				5FD746F6233E452900E5E4AD /* ViewController.swift */,
-				5FD746F8233E452900E5E4AD /* Main.storyboard */,
 				5FD746FB233E452A00E5E4AD /* Assets.xcassets */,
 				5FD746FD233E452A00E5E4AD /* LaunchScreen.storyboard */,
 				5FD74700233E452A00E5E4AD /* Info.plist */,
