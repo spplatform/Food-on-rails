@@ -36,7 +36,7 @@ class TicketViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "openRoute" {
-            if let destinationVC = segue.destination as? RouteViewController {
+            if let destinationVC = (segue.destination as? UINavigationController)?.children.first as? RouteViewController {
                 destinationVC.routeRespone = routeRespone
             }
         }
