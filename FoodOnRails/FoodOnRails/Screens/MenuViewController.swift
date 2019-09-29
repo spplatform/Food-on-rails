@@ -13,6 +13,12 @@ var cafeResponse: CafeResponse?
 class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var cafeResponse: CafeResponse?
+    var routeResponseStops: RouteResponseStops?
+    var routeRespone: RouteResponse?
+    
+    var stopId = ""
+    var cafeId = ""
+    var dish:CafeDishResponse?
     
     @IBOutlet var tableView: UITableView!
     
@@ -20,15 +26,14 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         tableView.dataSource = self
         
-        
-        let customImageBarBtn2 = UIBarButtonItem(
-            image: UIImage(named: "btnCart.png")?.withRenderingMode(.alwaysOriginal),
-        style: .plain, target: self, action: #selector(handleCarttTap))
-        navigationItem.rightBarButtonItems = [customImageBarBtn2]
+        if let cartButton = getCartButton() {
+            navigationItem.rightBarButtonItems = [cartButton]
+        }
+        NotificationCenter.default.addObserver(self, selector: #selector(updateCart(notification:)), name: .updateCart, object: nil)
     }
     
-    @objc func handleCarttTap() {
-        self.performSegue(withIdentifier: "openCart", sender: self)
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: .updateCart, object: nil)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -48,8 +53,16 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        cafeResponse = self.routeResponseStops?.cafes[indexPath.row]
-//        self.performSegue(withIdentifier: "openMenu", sender: self)
+        
+        var newDish = DishInCart()
+        newDish.stopId = routeResponseStops?.cityId ?? ""
+        newDish.cafeId = cafeResponse?.id ?? ""
+        newDish.dish = cafeResponse?.positions[indexPath.row]
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate 
+        appDelegate.dishesList?.append(newDish)
+        NotificationCenter.default.post(name: .updateCart, object: nil)
+        print(appDelegate.dishesList?.count ?? "0" )
     }
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -59,4 +72,38 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
 //            }
 //        }
 //    }
+}
+
+// MARK: - CartButton logic
+
+extension MenuViewController {
+    @objc func updateCart(notification: NSNotification) {
+        if let cartButton = getCartButton() {
+            navigationItem.rightBarButtonItems = [cartButton]
+        }
+    }
+    
+    func getCartButton() -> UIBarButtonItem? {
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate, let dishes = appDelegate.dishesList {
+            let cartBtn: UIBarButtonItem
+            if dishes.isEmpty {
+                cartBtn = UIBarButtonItem(
+                    image: UIImage(named: "btnCart.png")?.withRenderingMode(.alwaysOriginal),
+                style: .plain, target: self, action: #selector(handleCartTap))
+                return cartBtn
+            } else {
+                if let image = UIImage(named: "btnCartActive.png") {
+                    cartBtn = UIBarButtonItem(
+                    image: image.withRenderingMode(.alwaysOriginal),
+                    title: " " + String(dishes.count) + " ", target: self, action: #selector(handleCartTap))
+                    return cartBtn
+                }
+            }
+        }
+        return nil
+    }
+    
+    @objc func handleCartTap() {
+        self.performSegue(withIdentifier: "openCart", sender: self)
+    }
 }

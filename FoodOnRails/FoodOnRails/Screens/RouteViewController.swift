@@ -24,19 +24,19 @@ class RouteViewController: UIViewController, UITableViewDataSource, UITableViewD
         style: .plain, target: self, action: #selector(handleTicketTap))
         navigationItem.leftBarButtonItems = [customImageBarBtn1]
         
-        let customImageBarBtn2 = UIBarButtonItem(
-            image: UIImage(named: "btnCart.png")?.withRenderingMode(.alwaysOriginal),
-        style: .plain, target: self, action: #selector(handleCarttTap))
-        navigationItem.rightBarButtonItems = [customImageBarBtn2]
+        if let cartButton = getCartButton() {
+            navigationItem.rightBarButtonItems = [cartButton]
+        }
+        NotificationCenter.default.addObserver(self, selector: #selector(updateCart(notification:)), name: .updateCart, object: nil)
+    }
+        
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: .updateCart, object: nil)
     }
     
     
     @objc func handleTicketTap() {
         self.performSegue(withIdentifier: "openTicket", sender: self)
-    }
-    
-    @objc func handleCarttTap() {
-        self.performSegue(withIdentifier: "openCart", sender: self)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -72,6 +72,7 @@ class RouteViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "openStation" {
             if let destinationVC = segue.destination as? StationViewController {
+                destinationVC.routeRespone = routeRespone
                 destinationVC.routeResponseStops = selectedRouteResponseStops
             }
         }
@@ -83,5 +84,39 @@ extension Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: self)
+    }
+}
+
+// MARK: - CartButton logic
+
+extension RouteViewController {
+    @objc func updateCart(notification: NSNotification) {
+        if let cartButton = getCartButton() {
+            navigationItem.rightBarButtonItems = [cartButton]
+        }
+    }
+    
+    func getCartButton() -> UIBarButtonItem? {
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate, let dishes = appDelegate.dishesList {
+            let cartBtn: UIBarButtonItem
+            if dishes.isEmpty {
+                cartBtn = UIBarButtonItem(
+                    image: UIImage(named: "btnCart.png")?.withRenderingMode(.alwaysOriginal),
+                style: .plain, target: self, action: #selector(handleCartTap))
+                return cartBtn
+            } else {
+                if let image = UIImage(named: "btnCartActive.png") {
+                    cartBtn = UIBarButtonItem(
+                    image: image.withRenderingMode(.alwaysOriginal),
+                    title: " " + String(dishes.count) + " ", target: self, action: #selector(handleCartTap))
+                    return cartBtn
+                }
+            }
+        }
+        return nil
+    }
+    
+    @objc func handleCartTap() {
+        self.performSegue(withIdentifier: "openCart", sender: self)
     }
 }
