@@ -7,7 +7,7 @@
 import Foundation
 
 public class SwaggerClientAPI {
-    public static var basePath = "https://kazan-hacka1.localtunnel.me/api"
+    public static var basePath = "https://kazan-hacka2.localtunnel.me/api"
     public static var credential: URLCredential?
     public static var customHeaders: [String:String] = [:]
     public static var requestBuilderFactory: RequestBuilderFactory = AlamofireRequestBuilderFactory()

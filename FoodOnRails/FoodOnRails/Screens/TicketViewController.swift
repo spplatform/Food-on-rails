@@ -73,6 +73,11 @@ extension TicketViewController: BarcodeScannerCodeDelegate {
         ticketId = code
         ticketNumber.text = code
         controller.dismiss(animated: true, completion: nil)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {[weak self] in
+            self?.routRequest(for: self?.ticketId ?? "20073776662724")
+        }
+        
     }
 }
 
