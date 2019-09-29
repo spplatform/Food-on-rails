@@ -14,10 +14,17 @@ class DishTableViewCell: UITableViewCell {
     @IBOutlet var dishName: UILabel!
     @IBOutlet var price: UILabel!
     @IBOutlet var dishText: UILabel!
+    @IBOutlet var priceContainer: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        logo.layer.masksToBounds = true
+        logo.layer.cornerRadius = 5
+        
+        priceContainer.layer.masksToBounds = true
+        priceContainer.layer.cornerRadius = 5
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

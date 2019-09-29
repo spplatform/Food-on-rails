@@ -11,6 +11,7 @@
 		5F71CE6F234064A000DD2C59 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F71CE6E234064A000DD2C59 /* CartTableViewCell.swift */; };
 		5F71CE7223406A9100DD2C59 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F71CE7123406A9100DD2C59 /* Notifications.swift */; };
 		5F71CE742340714600DD2C59 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F71CE732340714600DD2C59 /* CartButton.swift */; };
+		5F71CE76234082DB00DD2C59 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F71CE75234082DB00DD2C59 /* DesignableView.swift */; };
 		5FA47060233F4C59004E5CA5 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4705F233F4C59004E5CA5 /* TicketViewController.swift */; };
 		5FA47062233F563B004E5CA5 /* RouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA47061233F563B004E5CA5 /* RouteViewController.swift */; };
 		5FA47064233F5654004E5CA5 /* StationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA47063233F5654004E5CA5 /* StationViewController.swift */; };
@@ -85,6 +86,7 @@
 		5F71CE6E234064A000DD2C59 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		5F71CE7123406A9100DD2C59 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		5F71CE732340714600DD2C59 /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		5F71CE75234082DB00DD2C59 /* DesignableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
 		5FA4705F233F4C59004E5CA5 /* TicketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		5FA47061233F563B004E5CA5 /* RouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteViewController.swift; sourceTree = "<group>"; };
 		5FA47063233F5654004E5CA5 /* StationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 		5FA4705E233F4C59004E5CA5 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				5F71CE75234082DB00DD2C59 /* DesignableView.swift */,
 				5FD746F8233E452900E5E4AD /* Main.storyboard */,
 				5FA4705F233F4C59004E5CA5 /* TicketViewController.swift */,
 				5FA47061233F563B004E5CA5 /* RouteViewController.swift */,
@@ -579,6 +582,7 @@
 				5FD746F7233E452900E5E4AD /* ViewController.swift in Sources */,
 				5FC31DCC23401CA1009D937F /* Models.swift in Sources */,
 				5F71CE7223406A9100DD2C59 /* Notifications.swift in Sources */,
+				5F71CE76234082DB00DD2C59 /* DesignableView.swift in Sources */,
 				5FC31DC423401CA1009D937F /* RouteResponse.swift in Sources */,
 				5FD746F3233E452800E5E4AD /* AppDelegate.swift in Sources */,
 				5FC31DB623401CA1009D937F /* OrderAPI.swift in Sources */,

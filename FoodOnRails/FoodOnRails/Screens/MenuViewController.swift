@@ -45,7 +45,7 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
         if let cafe = cafeResponse {
             cell.dishName.text = cafe.positions[indexPath.row].name
             cell.dishText.text = cafe.positions[indexPath.row].description
-            cell.price.text = String(cafe.positions[indexPath.row].price)
+            cell.price.text = String(cafe.positions[indexPath.row].price/100) + " ₽"
             let url = URL(string: cafe.positions[indexPath.row].imageUrl)!
             cell.logo.af_setImage(withURL: url)
         }

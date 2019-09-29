@@ -10,6 +10,8 @@ import UIKit
 
 class CartViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet var payButton: UIButton!
+    
     var cafeResponse: CafeResponse?
     var routeResponseStops: RouteResponseStops?
     var routeRespone: RouteResponse?
@@ -25,6 +27,9 @@ class CartViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        
+        payButton.layer.masksToBounds = true
+        payButton.layer.cornerRadius = 5
         
         if let appDelegate = UIApplication.shared.delegate as? AppDelegate, let dishes = appDelegate.dishesList {
             cart = dishes
@@ -46,7 +51,7 @@ class CartViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "CartTableViewCell", for: indexPath) as! CartTableViewCell
         cell.dishName.text = cart[indexPath.row].dish?.name ?? ""
-        cell.price.text = String(cart[indexPath.row].dish?.price ?? 0)
+        cell.price.text = String((cart[indexPath.row].dish?.price ?? 0)/100) + " ₽"
         return cell
     }
     
