@@ -1,5 +1,5 @@
 //
-//  CafeTableViewCell.swift
+//  DishTableViewCell.swift
 //  FoodOnRails
 //
 //  Created by Kirill Klebanov on 9/29/19.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class CafeTableViewCell: UITableViewCell {
+class DishTableViewCell: UITableViewCell {
 
     @IBOutlet var logo: UIImageView!
-    @IBOutlet var cafeName: UILabel!
-    @IBOutlet var minOrder: UILabel!
-    @IBOutlet var kitchenType: UILabel!
+    @IBOutlet var dishName: UILabel!
+    @IBOutlet var price: UILabel!
+    @IBOutlet var dishText: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

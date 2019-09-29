@@ -8,29 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		22740EDC8BEC81B7542CD878 /* Pods_FoodOnRails.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D294D2D34B2794061541951A /* Pods_FoodOnRails.framework */; };
-		5FA47044233F49B1004E5CA5 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4702A233F49B0004E5CA5 /* Configuration.swift */; };
-		5FA47045233F49B1004E5CA5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4702B233F49B0004E5CA5 /* Extensions.swift */; };
-		5FA47046233F49B1004E5CA5 /* JSONEncodableEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4702C233F49B0004E5CA5 /* JSONEncodableEncoding.swift */; };
-		5FA47047233F49B1004E5CA5 /* JSONEncodingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4702D233F49B1004E5CA5 /* JSONEncodingHelper.swift */; };
-		5FA47048233F49B1004E5CA5 /* OrderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4702F233F49B1004E5CA5 /* OrderAPI.swift */; };
-		5FA47049233F49B1004E5CA5 /* RouteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA47030233F49B1004E5CA5 /* RouteAPI.swift */; };
-		5FA4704B233F49B1004E5CA5 /* CouponAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA47032233F49B1004E5CA5 /* CouponAPI.swift */; };
-		5FA4704C233F49B1004E5CA5 /* AlamofireImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA47033233F49B1004E5CA5 /* AlamofireImplementations.swift */; };
-		5FA4704D233F49B1004E5CA5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA47034233F49B1004E5CA5 /* Models.swift */; };
-		5FA4704E233F49B1004E5CA5 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA47035233F49B1004E5CA5 /* APIHelper.swift */; };
-		5FA4704F233F49B1004E5CA5 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA47036233F49B1004E5CA5 /* APIs.swift */; };
-		5FA47050233F49B1004E5CA5 /* OrderCreateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA47038233F49B1004E5CA5 /* OrderCreateResponse.swift */; };
-		5FA47051233F49B1004E5CA5 /* StatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA47039233F49B1004E5CA5 /* StatusResponse.swift */; };
-		5FA47052233F49B1004E5CA5 /* OrderRequestOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4703A233F49B1004E5CA5 /* OrderRequestOrder.swift */; };
-		5FA47053233F49B1004E5CA5 /* CafeDishResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4703B233F49B1004E5CA5 /* CafeDishResponse.swift */; };
-		5FA47054233F49B1004E5CA5 /* CafeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4703C233F49B1004E5CA5 /* CafeResponse.swift */; };
-		5FA47055233F49B1004E5CA5 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4703D233F49B1004E5CA5 /* OrderItem.swift */; };
-		5FA47056233F49B1004E5CA5 /* RouteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4703E233F49B1004E5CA5 /* RouteResponse.swift */; };
-		5FA47057233F49B1004E5CA5 /* OrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4703F233F49B1004E5CA5 /* OrderRequest.swift */; };
-		5FA47058233F49B1004E5CA5 /* CouponResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA47040233F49B1004E5CA5 /* CouponResponse.swift */; };
-		5FA47059233F49B1004E5CA5 /* RouteResponseStops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA47041233F49B1004E5CA5 /* RouteResponseStops.swift */; };
-		5FA4705A233F49B1004E5CA5 /* OrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA47042233F49B1004E5CA5 /* OrderResponse.swift */; };
-		5FA4705B233F49B1004E5CA5 /* CodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA47043233F49B1004E5CA5 /* CodableHelper.swift */; };
 		5FA47060233F4C59004E5CA5 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4705F233F4C59004E5CA5 /* TicketViewController.swift */; };
 		5FA47062233F563B004E5CA5 /* RouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA47061233F563B004E5CA5 /* RouteViewController.swift */; };
 		5FA47064233F5654004E5CA5 /* StationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA47063233F5654004E5CA5 /* StationViewController.swift */; };
@@ -40,6 +17,34 @@
 		5FA4706C233F56B6004E5CA5 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4706B233F56B6004E5CA5 /* PaymentViewController.swift */; };
 		5FC31D94233FB105009D937F /* RouteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31D93233FB105009D937F /* RouteTableViewCell.swift */; };
 		5FC31D962340122B009D937F /* CafeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31D952340122B009D937F /* CafeTableViewCell.swift */; };
+		5FC31DB423401CA1009D937F /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31D9823401CA0009D937F /* APIHelper.swift */; };
+		5FC31DB523401CA1009D937F /* AlamofireImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31D9923401CA0009D937F /* AlamofireImplementations.swift */; };
+		5FC31DB623401CA1009D937F /* OrderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31D9B23401CA0009D937F /* OrderAPI.swift */; };
+		5FC31DB723401CA1009D937F /* RouteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31D9C23401CA0009D937F /* RouteAPI.swift */; };
+		5FC31DB823401CA1009D937F /* PaymentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31D9D23401CA0009D937F /* PaymentAPI.swift */; };
+		5FC31DB923401CA1009D937F /* CouponAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31D9E23401CA0009D937F /* CouponAPI.swift */; };
+		5FC31DBA23401CA1009D937F /* CodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31D9F23401CA0009D937F /* CodableHelper.swift */; };
+		5FC31DBB23401CA1009D937F /* JSONEncodableEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31DA023401CA0009D937F /* JSONEncodableEncoding.swift */; };
+		5FC31DBC23401CA1009D937F /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31DA123401CA0009D937F /* APIs.swift */; };
+		5FC31DBD23401CA1009D937F /* OrderCreateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31DA323401CA0009D937F /* OrderCreateResponse.swift */; };
+		5FC31DBE23401CA1009D937F /* PaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31DA423401CA0009D937F /* PaymentResponse.swift */; };
+		5FC31DBF23401CA1009D937F /* StatusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31DA523401CA0009D937F /* StatusResponse.swift */; };
+		5FC31DC023401CA1009D937F /* OrderRequestOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31DA623401CA0009D937F /* OrderRequestOrder.swift */; };
+		5FC31DC123401CA1009D937F /* CafeDishResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31DA723401CA0009D937F /* CafeDishResponse.swift */; };
+		5FC31DC223401CA1009D937F /* CafeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31DA823401CA0009D937F /* CafeResponse.swift */; };
+		5FC31DC323401CA1009D937F /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31DA923401CA0009D937F /* OrderItem.swift */; };
+		5FC31DC423401CA1009D937F /* RouteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31DAA23401CA0009D937F /* RouteResponse.swift */; };
+		5FC31DC523401CA1009D937F /* OrderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31DAB23401CA0009D937F /* OrderRequest.swift */; };
+		5FC31DC623401CA1009D937F /* CouponResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31DAC23401CA0009D937F /* CouponResponse.swift */; };
+		5FC31DC723401CA1009D937F /* RouteResponseStops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31DAD23401CA0009D937F /* RouteResponseStops.swift */; };
+		5FC31DC823401CA1009D937F /* PaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31DAE23401CA0009D937F /* PaymentRequest.swift */; };
+		5FC31DC923401CA1009D937F /* OrderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31DAF23401CA0009D937F /* OrderResponse.swift */; };
+		5FC31DCA23401CA1009D937F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31DB023401CA0009D937F /* Extensions.swift */; };
+		5FC31DCB23401CA1009D937F /* JSONEncodingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31DB123401CA0009D937F /* JSONEncodingHelper.swift */; };
+		5FC31DCC23401CA1009D937F /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31DB223401CA0009D937F /* Models.swift */; };
+		5FC31DCD23401CA1009D937F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31DB323401CA0009D937F /* Configuration.swift */; };
+		5FC31DD023401EB0009D937F /* ticket_20073776662724.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FC31DCF23401EB0009D937F /* ticket_20073776662724.json */; };
+		5FC31DD223402894009D937F /* DishTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC31DD123402894009D937F /* DishTableViewCell.swift */; };
 		5FD746F3233E452800E5E4AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD746F2233E452800E5E4AD /* AppDelegate.swift */; };
 		5FD746F5233E452800E5E4AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD746F4233E452800E5E4AD /* SceneDelegate.swift */; };
 		5FD746F7233E452900E5E4AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD746F6233E452900E5E4AD /* ViewController.swift */; };
@@ -74,29 +79,6 @@
 		21D37FCBE9DDA44C3EDCD679 /* Pods_FoodOnRailsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodOnRailsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4379C0AC9CB4131A36973541 /* Pods-FoodOnRailsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodOnRailsUITests.debug.xcconfig"; path = "Target Support Files/Pods-FoodOnRailsUITests/Pods-FoodOnRailsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		541CEF8F9945F4A0C54024F8 /* Pods-FoodOnRailsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodOnRailsUITests.release.xcconfig"; path = "Target Support Files/Pods-FoodOnRailsUITests/Pods-FoodOnRailsUITests.release.xcconfig"; sourceTree = "<group>"; };
-		5FA4702A233F49B0004E5CA5 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = FoodOnRails/Swaggers/Configuration.swift; sourceTree = SOURCE_ROOT; };
-		5FA4702B233F49B0004E5CA5 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = FoodOnRails/Swaggers/Extensions.swift; sourceTree = SOURCE_ROOT; };
-		5FA4702C233F49B0004E5CA5 /* JSONEncodableEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONEncodableEncoding.swift; path = FoodOnRails/Swaggers/JSONEncodableEncoding.swift; sourceTree = SOURCE_ROOT; };
-		5FA4702D233F49B1004E5CA5 /* JSONEncodingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONEncodingHelper.swift; path = FoodOnRails/Swaggers/JSONEncodingHelper.swift; sourceTree = SOURCE_ROOT; };
-		5FA4702F233F49B1004E5CA5 /* OrderAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderAPI.swift; sourceTree = "<group>"; };
-		5FA47030233F49B1004E5CA5 /* RouteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteAPI.swift; sourceTree = "<group>"; };
-		5FA47032233F49B1004E5CA5 /* CouponAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponAPI.swift; sourceTree = "<group>"; };
-		5FA47033233F49B1004E5CA5 /* AlamofireImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AlamofireImplementations.swift; path = FoodOnRails/Swaggers/AlamofireImplementations.swift; sourceTree = SOURCE_ROOT; };
-		5FA47034233F49B1004E5CA5 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Models.swift; path = FoodOnRails/Swaggers/Models.swift; sourceTree = SOURCE_ROOT; };
-		5FA47035233F49B1004E5CA5 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIHelper.swift; path = FoodOnRails/Swaggers/APIHelper.swift; sourceTree = SOURCE_ROOT; };
-		5FA47036233F49B1004E5CA5 /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIs.swift; path = FoodOnRails/Swaggers/APIs.swift; sourceTree = SOURCE_ROOT; };
-		5FA47038233F49B1004E5CA5 /* OrderCreateResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCreateResponse.swift; sourceTree = "<group>"; };
-		5FA47039233F49B1004E5CA5 /* StatusResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusResponse.swift; sourceTree = "<group>"; };
-		5FA4703A233F49B1004E5CA5 /* OrderRequestOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderRequestOrder.swift; sourceTree = "<group>"; };
-		5FA4703B233F49B1004E5CA5 /* CafeDishResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeDishResponse.swift; sourceTree = "<group>"; };
-		5FA4703C233F49B1004E5CA5 /* CafeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeResponse.swift; sourceTree = "<group>"; };
-		5FA4703D233F49B1004E5CA5 /* OrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
-		5FA4703E233F49B1004E5CA5 /* RouteResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteResponse.swift; sourceTree = "<group>"; };
-		5FA4703F233F49B1004E5CA5 /* OrderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderRequest.swift; sourceTree = "<group>"; };
-		5FA47040233F49B1004E5CA5 /* CouponResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponResponse.swift; sourceTree = "<group>"; };
-		5FA47041233F49B1004E5CA5 /* RouteResponseStops.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteResponseStops.swift; sourceTree = "<group>"; };
-		5FA47042233F49B1004E5CA5 /* OrderResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderResponse.swift; sourceTree = "<group>"; };
-		5FA47043233F49B1004E5CA5 /* CodableHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CodableHelper.swift; path = FoodOnRails/Swaggers/CodableHelper.swift; sourceTree = SOURCE_ROOT; };
 		5FA4705F233F4C59004E5CA5 /* TicketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
 		5FA47061233F563B004E5CA5 /* RouteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteViewController.swift; sourceTree = "<group>"; };
 		5FA47063233F5654004E5CA5 /* StationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +88,34 @@
 		5FA4706B233F56B6004E5CA5 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		5FC31D93233FB105009D937F /* RouteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteTableViewCell.swift; sourceTree = "<group>"; };
 		5FC31D952340122B009D937F /* CafeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeTableViewCell.swift; sourceTree = "<group>"; };
+		5FC31D9823401CA0009D937F /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		5FC31D9923401CA0009D937F /* AlamofireImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireImplementations.swift; sourceTree = "<group>"; };
+		5FC31D9B23401CA0009D937F /* OrderAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderAPI.swift; sourceTree = "<group>"; };
+		5FC31D9C23401CA0009D937F /* RouteAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteAPI.swift; sourceTree = "<group>"; };
+		5FC31D9D23401CA0009D937F /* PaymentAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentAPI.swift; sourceTree = "<group>"; };
+		5FC31D9E23401CA0009D937F /* CouponAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponAPI.swift; sourceTree = "<group>"; };
+		5FC31D9F23401CA0009D937F /* CodableHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableHelper.swift; sourceTree = "<group>"; };
+		5FC31DA023401CA0009D937F /* JSONEncodableEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodableEncoding.swift; sourceTree = "<group>"; };
+		5FC31DA123401CA0009D937F /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		5FC31DA323401CA0009D937F /* OrderCreateResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCreateResponse.swift; sourceTree = "<group>"; };
+		5FC31DA423401CA0009D937F /* PaymentResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentResponse.swift; sourceTree = "<group>"; };
+		5FC31DA523401CA0009D937F /* StatusResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusResponse.swift; sourceTree = "<group>"; };
+		5FC31DA623401CA0009D937F /* OrderRequestOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderRequestOrder.swift; sourceTree = "<group>"; };
+		5FC31DA723401CA0009D937F /* CafeDishResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeDishResponse.swift; sourceTree = "<group>"; };
+		5FC31DA823401CA0009D937F /* CafeResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CafeResponse.swift; sourceTree = "<group>"; };
+		5FC31DA923401CA0009D937F /* OrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		5FC31DAA23401CA0009D937F /* RouteResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteResponse.swift; sourceTree = "<group>"; };
+		5FC31DAB23401CA0009D937F /* OrderRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderRequest.swift; sourceTree = "<group>"; };
+		5FC31DAC23401CA0009D937F /* CouponResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CouponResponse.swift; sourceTree = "<group>"; };
+		5FC31DAD23401CA0009D937F /* RouteResponseStops.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteResponseStops.swift; sourceTree = "<group>"; };
+		5FC31DAE23401CA0009D937F /* PaymentRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentRequest.swift; sourceTree = "<group>"; };
+		5FC31DAF23401CA0009D937F /* OrderResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderResponse.swift; sourceTree = "<group>"; };
+		5FC31DB023401CA0009D937F /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5FC31DB123401CA0009D937F /* JSONEncodingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodingHelper.swift; sourceTree = "<group>"; };
+		5FC31DB223401CA0009D937F /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		5FC31DB323401CA0009D937F /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		5FC31DCF23401EB0009D937F /* ticket_20073776662724.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ticket_20073776662724.json; sourceTree = "<group>"; };
+		5FC31DD123402894009D937F /* DishTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishTableViewCell.swift; sourceTree = "<group>"; };
 		5FD746EF233E452800E5E4AD /* FoodOnRails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodOnRails.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FD746F2233E452800E5E4AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FD746F4233E452800E5E4AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,36 +178,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		5FA4702E233F49B1004E5CA5 /* APIs */ = {
-			isa = PBXGroup;
-			children = (
-				5FA4702F233F49B1004E5CA5 /* OrderAPI.swift */,
-				5FA47030233F49B1004E5CA5 /* RouteAPI.swift */,
-				5FA47032233F49B1004E5CA5 /* CouponAPI.swift */,
-			);
-			name = APIs;
-			path = FoodOnRails/Swaggers/APIs;
-			sourceTree = SOURCE_ROOT;
-		};
-		5FA47037233F49B1004E5CA5 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				5FA47038233F49B1004E5CA5 /* OrderCreateResponse.swift */,
-				5FA47039233F49B1004E5CA5 /* StatusResponse.swift */,
-				5FA4703A233F49B1004E5CA5 /* OrderRequestOrder.swift */,
-				5FA4703B233F49B1004E5CA5 /* CafeDishResponse.swift */,
-				5FA4703C233F49B1004E5CA5 /* CafeResponse.swift */,
-				5FA4703D233F49B1004E5CA5 /* OrderItem.swift */,
-				5FA4703E233F49B1004E5CA5 /* RouteResponse.swift */,
-				5FA4703F233F49B1004E5CA5 /* OrderRequest.swift */,
-				5FA47040233F49B1004E5CA5 /* CouponResponse.swift */,
-				5FA47041233F49B1004E5CA5 /* RouteResponseStops.swift */,
-				5FA47042233F49B1004E5CA5 /* OrderResponse.swift */,
-			);
-			name = Models;
-			path = FoodOnRails/Swaggers/Models;
-			sourceTree = SOURCE_ROOT;
-		};
 		5FA4705E233F4C59004E5CA5 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,27 +191,66 @@
 				5FA4706B233F56B6004E5CA5 /* PaymentViewController.swift */,
 				5FC31D93233FB105009D937F /* RouteTableViewCell.swift */,
 				5FC31D952340122B009D937F /* CafeTableViewCell.swift */,
+				5FC31DD123402894009D937F /* DishTableViewCell.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
 		};
-		5FA4A59F233E922E00084A33 /* Swaggers */ = {
+		5FC31D9723401CA0009D937F /* Swaggers */ = {
 			isa = PBXGroup;
 			children = (
-				5FA47033233F49B1004E5CA5 /* AlamofireImplementations.swift */,
-				5FA47035233F49B1004E5CA5 /* APIHelper.swift */,
-				5FA4702E233F49B1004E5CA5 /* APIs */,
-				5FA47036233F49B1004E5CA5 /* APIs.swift */,
-				5FA47043233F49B1004E5CA5 /* CodableHelper.swift */,
-				5FA4702A233F49B0004E5CA5 /* Configuration.swift */,
-				5FA4702B233F49B0004E5CA5 /* Extensions.swift */,
-				5FA4702C233F49B0004E5CA5 /* JSONEncodableEncoding.swift */,
-				5FA4702D233F49B1004E5CA5 /* JSONEncodingHelper.swift */,
-				5FA47037233F49B1004E5CA5 /* Models */,
-				5FA47034233F49B1004E5CA5 /* Models.swift */,
+				5FC31D9823401CA0009D937F /* APIHelper.swift */,
+				5FC31D9923401CA0009D937F /* AlamofireImplementations.swift */,
+				5FC31D9A23401CA0009D937F /* APIs */,
+				5FC31D9F23401CA0009D937F /* CodableHelper.swift */,
+				5FC31DA023401CA0009D937F /* JSONEncodableEncoding.swift */,
+				5FC31DA123401CA0009D937F /* APIs.swift */,
+				5FC31DA223401CA0009D937F /* Models */,
+				5FC31DB023401CA0009D937F /* Extensions.swift */,
+				5FC31DB123401CA0009D937F /* JSONEncodingHelper.swift */,
+				5FC31DB223401CA0009D937F /* Models.swift */,
+				5FC31DB323401CA0009D937F /* Configuration.swift */,
 			);
-			name = Swaggers;
-			path = ../../../../Swager/samples/client/SwaggerClient/Classes/Swaggers;
+			path = Swaggers;
+			sourceTree = "<group>";
+		};
+		5FC31D9A23401CA0009D937F /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				5FC31D9B23401CA0009D937F /* OrderAPI.swift */,
+				5FC31D9C23401CA0009D937F /* RouteAPI.swift */,
+				5FC31D9D23401CA0009D937F /* PaymentAPI.swift */,
+				5FC31D9E23401CA0009D937F /* CouponAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		5FC31DA223401CA0009D937F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5FC31DA323401CA0009D937F /* OrderCreateResponse.swift */,
+				5FC31DA423401CA0009D937F /* PaymentResponse.swift */,
+				5FC31DA523401CA0009D937F /* StatusResponse.swift */,
+				5FC31DA623401CA0009D937F /* OrderRequestOrder.swift */,
+				5FC31DA723401CA0009D937F /* CafeDishResponse.swift */,
+				5FC31DA823401CA0009D937F /* CafeResponse.swift */,
+				5FC31DA923401CA0009D937F /* OrderItem.swift */,
+				5FC31DAA23401CA0009D937F /* RouteResponse.swift */,
+				5FC31DAB23401CA0009D937F /* OrderRequest.swift */,
+				5FC31DAC23401CA0009D937F /* CouponResponse.swift */,
+				5FC31DAD23401CA0009D937F /* RouteResponseStops.swift */,
+				5FC31DAE23401CA0009D937F /* PaymentRequest.swift */,
+				5FC31DAF23401CA0009D937F /* OrderResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5FC31DCE23401EAF009D937F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5FC31DCF23401EB0009D937F /* ticket_20073776662724.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		5FD746E6233E452800E5E4AD = {
@@ -259,8 +278,9 @@
 		5FD746F1233E452800E5E4AD /* FoodOnRails */ = {
 			isa = PBXGroup;
 			children = (
+				5FC31DCE23401EAF009D937F /* Resources */,
+				5FC31D9723401CA0009D937F /* Swaggers */,
 				5FA4705E233F4C59004E5CA5 /* Screens */,
-				5FA4A59F233E922E00084A33 /* Swaggers */,
 				5FD746F2233E452800E5E4AD /* AppDelegate.swift */,
 				5FD746F4233E452800E5E4AD /* SceneDelegate.swift */,
 				5FD746F6233E452900E5E4AD /* ViewController.swift */,
@@ -407,6 +427,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FC31DD023401EB0009D937F /* ticket_20073776662724.json in Resources */,
 				5FD746FF233E452A00E5E4AD /* LaunchScreen.storyboard in Resources */,
 				5FD746FC233E452A00E5E4AD /* Assets.xcassets in Resources */,
 				5FD746FA233E452900E5E4AD /* Main.storyboard in Resources */,
@@ -520,41 +541,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FA4704E233F49B1004E5CA5 /* APIHelper.swift in Sources */,
-				5FA47055233F49B1004E5CA5 /* OrderItem.swift in Sources */,
-				5FA4704D233F49B1004E5CA5 /* Models.swift in Sources */,
+				5FC31DBB23401CA1009D937F /* JSONEncodableEncoding.swift in Sources */,
+				5FC31DBC23401CA1009D937F /* APIs.swift in Sources */,
+				5FC31DBE23401CA1009D937F /* PaymentResponse.swift in Sources */,
 				5FA47060233F4C59004E5CA5 /* TicketViewController.swift in Sources */,
-				5FA47050233F49B1004E5CA5 /* OrderCreateResponse.swift in Sources */,
-				5FA47046233F49B1004E5CA5 /* JSONEncodableEncoding.swift in Sources */,
+				5FC31DBA23401CA1009D937F /* CodableHelper.swift in Sources */,
+				5FC31DC223401CA1009D937F /* CafeResponse.swift in Sources */,
 				5FA4706C233F56B6004E5CA5 /* PaymentViewController.swift in Sources */,
+				5FC31DB723401CA1009D937F /* RouteAPI.swift in Sources */,
+				5FC31DB823401CA1009D937F /* PaymentAPI.swift in Sources */,
+				5FC31DC323401CA1009D937F /* OrderItem.swift in Sources */,
+				5FC31DC723401CA1009D937F /* RouteResponseStops.swift in Sources */,
+				5FC31DB923401CA1009D937F /* CouponAPI.swift in Sources */,
+				5FC31DC823401CA1009D937F /* PaymentRequest.swift in Sources */,
 				5FA47066233F5673004E5CA5 /* MenuViewController.swift in Sources */,
-				5FA47047233F49B1004E5CA5 /* JSONEncodingHelper.swift in Sources */,
-				5FA4705A233F49B1004E5CA5 /* OrderResponse.swift in Sources */,
 				5FA47064233F5654004E5CA5 /* StationViewController.swift in Sources */,
-				5FA47045233F49B1004E5CA5 /* Extensions.swift in Sources */,
+				5FC31DC923401CA1009D937F /* OrderResponse.swift in Sources */,
 				5FD746F7233E452900E5E4AD /* ViewController.swift in Sources */,
-				5FA47053233F49B1004E5CA5 /* CafeDishResponse.swift in Sources */,
-				5FA47058233F49B1004E5CA5 /* CouponResponse.swift in Sources */,
+				5FC31DCC23401CA1009D937F /* Models.swift in Sources */,
+				5FC31DC423401CA1009D937F /* RouteResponse.swift in Sources */,
 				5FD746F3233E452800E5E4AD /* AppDelegate.swift in Sources */,
-				5FA4704C233F49B1004E5CA5 /* AlamofireImplementations.swift in Sources */,
-				5FA47044233F49B1004E5CA5 /* Configuration.swift in Sources */,
+				5FC31DB623401CA1009D937F /* OrderAPI.swift in Sources */,
+				5FC31DCA23401CA1009D937F /* Extensions.swift in Sources */,
+				5FC31DCD23401CA1009D937F /* Configuration.swift in Sources */,
 				5FD746F5233E452800E5E4AD /* SceneDelegate.swift in Sources */,
-				5FA4705B233F49B1004E5CA5 /* CodableHelper.swift in Sources */,
 				5FA4706A233F56A1004E5CA5 /* OrderViewController.swift in Sources */,
-				5FA47056233F49B1004E5CA5 /* RouteResponse.swift in Sources */,
-				5FA47057233F49B1004E5CA5 /* OrderRequest.swift in Sources */,
-				5FA47048233F49B1004E5CA5 /* OrderAPI.swift in Sources */,
+				5FC31DB523401CA1009D937F /* AlamofireImplementations.swift in Sources */,
 				5FC31D94233FB105009D937F /* RouteTableViewCell.swift in Sources */,
-				5FA4704B233F49B1004E5CA5 /* CouponAPI.swift in Sources */,
+				5FC31DD223402894009D937F /* DishTableViewCell.swift in Sources */,
+				5FC31DBF23401CA1009D937F /* StatusResponse.swift in Sources */,
+				5FC31DC523401CA1009D937F /* OrderRequest.swift in Sources */,
+				5FC31DC123401CA1009D937F /* CafeDishResponse.swift in Sources */,
 				5FC31D962340122B009D937F /* CafeTableViewCell.swift in Sources */,
-				5FA47054233F49B1004E5CA5 /* CafeResponse.swift in Sources */,
-				5FA4704F233F49B1004E5CA5 /* APIs.swift in Sources */,
+				5FC31DB423401CA1009D937F /* APIHelper.swift in Sources */,
+				5FC31DBD23401CA1009D937F /* OrderCreateResponse.swift in Sources */,
+				5FC31DC023401CA1009D937F /* OrderRequestOrder.swift in Sources */,
+				5FC31DCB23401CA1009D937F /* JSONEncodingHelper.swift in Sources */,
+				5FC31DC623401CA1009D937F /* CouponResponse.swift in Sources */,
 				5FA47062233F563B004E5CA5 /* RouteViewController.swift in Sources */,
-				5FA47059233F49B1004E5CA5 /* RouteResponseStops.swift in Sources */,
 				5FA47068233F5689004E5CA5 /* CartViewController.swift in Sources */,
-				5FA47049233F49B1004E5CA5 /* RouteAPI.swift in Sources */,
-				5FA47051233F49B1004E5CA5 /* StatusResponse.swift in Sources */,
-				5FA47052233F49B1004E5CA5 /* OrderRequestOrder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

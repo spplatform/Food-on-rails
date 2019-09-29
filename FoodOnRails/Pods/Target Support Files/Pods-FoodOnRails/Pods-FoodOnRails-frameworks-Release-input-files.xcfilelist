@@ -1,5 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-FoodOnRails/Pods-FoodOnRails-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework
 ${BUILT_PRODUCTS_DIR}/BarcodeScanner/BarcodeScanner.framework
 ${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework
 ${BUILT_PRODUCTS_DIR}/Realm/Realm.framework

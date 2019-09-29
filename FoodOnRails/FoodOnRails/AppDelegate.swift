@@ -8,6 +8,8 @@
 
 import UIKit
 
+import OHHTTPStubs
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,7 +17,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        useHTTPStub()
         return true
+    }
+    
+    func useHTTPStub() {
+        var textStub: OHHTTPStubsDescriptor?
+        let stubPath = OHPathForFile("ticket_20073776662724.json", type(of: self))
+        guard let regex = try? NSRegularExpression(pattern: "(.*)route/ticket/(.*)", options: NSRegularExpression.Options.caseInsensitive) else {
+            return
+        }
+        textStub = stub(condition: pathMatches(regex)) {_ in
+            return fixture(filePath: stubPath!, headers: ["Content-Type":"application/json"])
+                .requestTime(0.0, responseTime:OHHTTPStubsDownloadSpeedWifi)
+        }
     }
 
     // MARK: UISceneSession Lifecycle

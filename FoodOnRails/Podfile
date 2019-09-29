@@ -11,6 +11,8 @@ target 'FoodOnRails' do
   pod 'SwiftyJSON'
   pod 'SVProgressHUD'
   pod 'BarcodeScanner'
+  pod 'AlamofireImage'
+  
 
   # Pods for FoodOnRails
 

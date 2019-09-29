@@ -1,0 +1,289 @@
+{
+	"stops": [{
+		"cafes": [{
+			"city_id": "5d8ef33031f77b52cf0642bd",
+			"id": "5d8ef64f31f77b52cf064398",
+			"name": "Баранкин",
+			"positions": [{
+				"description": "Говядина, свинина, сало, свекла, 300г.",
+				"id": "1",
+				"image_url": "https://i.pinimg.com/564x/fd/12/36/fd123652cfdce77acba95e4ac11a7c65.jpg",
+				"name": "Борщ",
+				"price": 15000
+			}, {
+				"description": "Квас, колбаса, огурец, яйцо, 280г.",
+				"id": "2",
+				"image_url": "https://i.pinimg.com/564x/be/7b/8c/be7b8c6bb4f262a6641c58f107ca030d.jpg",
+				"name": "Окрошка",
+				"price": 15000
+			}, {
+				"description": "Рис, специи, мясо, 250г.",
+				"id": "3",
+				"image_url": "https://i.pinimg.com/564x/89/b7/7f/89b77f3e6ec4d4d6d2c21b5839956310.jpg",
+				"name": "Плов",
+				"price": 23000
+			}, {
+				"description": "Водичка, ягоды, 240г.",
+				"id": "4",
+				"image_url": "https://i.pinimg.com/564x/29/c4/29/29c4299c819361e2dbacd87532f6fbac.jpg",
+				"name": "Компот",
+				"price": 4000
+			}]
+		}, {
+			"city_id": "5d8ef33031f77b52cf0642bd",
+			"id": "5d8ef75031f77b52cf0643da",
+			"name": "Пельмешка",
+			"positions": [{
+				"description": "Говядина, свинина, лук, тесто, 230г.",
+				"id": "1",
+				"image_url": "https://i.pinimg.com/564x/10/90/c2/1090c2077f8633953fc8371a93ff4e94.jpg",
+				"name": "Пельмени",
+				"price": 20000
+			}, {
+				"description": "Говядина, бульон, тесто, 300г.",
+				"id": "2",
+				"image_url": "https://i.pinimg.com/564x/d2/d3/53/d2d3538b533b1560be7bc8e6bdb25079.jpg",
+				"name": "Хинкали",
+				"price": 25000
+			}, {
+				"description": "Картофель, шкварки, тесто, 250г.",
+				"id": "3",
+				"image_url": "https://i.pinimg.com/564x/5f/e3/9e/5fe39ed85e1281ba4893a96ff71f3246.jpg",
+				"name": "Вареники",
+				"price": 18000
+			}]
+		}],
+		"city_id": "5d8ef33031f77b52cf0642bd",
+		"date_time": "2019-09-29T10:09:00.000Z",
+		"duration": 600,
+		"name": "Воронеж"
+	}, {
+		"cafes": [{
+			"city_id": "5d8ef36d31f77b52cf0642d2",
+			"id": "5d8ef8d731f77b52cf064443",
+			"name": "Баку навсегда",
+			"positions": [{
+				"description": "Говядина, лук, мука, 130г.",
+				"id": "1",
+				"image_url": "https://i.pinimg.com/564x/24/0d/51/240d514177c6b4f8e28e2a299f639c24.jpg",
+				"name": "Кутабы из говядины",
+				"price": 15000
+			}, {
+				"description": "Рис, чернослив, курага, специи, 200г.",
+				"id": "2",
+				"image_url": "https://i.pinimg.com/564x/ba/31/b4/ba31b42867df388064db55dc1094fac9.jpg",
+				"name": "Плов",
+				"price": 20000
+			}, {
+				"description": "Говядина, лук, тесто, 250г.",
+				"id": "3",
+				"image_url": "https://i.pinimg.com/564x/bc/0d/8a/bc0d8a7e697be76c2f20ca880f473200.jpg",
+				"name": "Гюрза",
+				"price": 23000
+			}]
+		}],
+		"city_id": "5d8ef36d31f77b52cf0642d2",
+		"date_time": "2019-09-29T11:45:00.000Z",
+		"duration": 600,
+		"name": "Грязи"
+	}, {
+		"cafes": [{
+			"city_id": "5d8ef38031f77b52cf0642d8",
+			"id": "5d8efa2831f77b52cf06449a",
+			"name": "Козлов Сити",
+			"positions": [{
+				"description": "Козлятина, лук, 250г.",
+				"id": "1",
+				"image_url": "https://i.pinimg.com/236x/f1/65/d7/f165d782d7b342dfe82ffc1064e1ea2f.jpg",
+				"name": "Козлиный суп",
+				"price": 12300
+			}, {
+				"description": "Козлятина, картофель, 230г.",
+				"id": "2",
+				"image_url": "https://i.pinimg.com/564x/27/a3/0f/27a30f365619cada189e4dcd1f2542d1.jpg",
+				"name": "Козлиный гуляш",
+				"price": 25000
+			}, {
+				"description": "Козлятина, мука, яйцо, 150г.",
+				"id": "3",
+				"image_url": "https://i.pinimg.com/564x/dd/b1/c9/ddb1c9a3b2415b45c510e72f08b7846f.jpg",
+				"name": "Козлиный пирог",
+				"price": 15000
+			}]
+		}],
+		"city_id": "5d8ef38031f77b52cf0642d8",
+		"date_time": "2019-09-29T12:25:00.000Z",
+		"duration": 600,
+		"name": "Мичуринск"
+	}, {
+		"cafes": [{
+			"city_id": "5d8ef38c31f77b52cf0642dd",
+			"id": "5d8efafb31f77b52cf0644d6",
+			"name": "Рязанский твист",
+			"positions": [{
+				"description": "Мясо, глаза, мука, 150г.",
+				"id": "1",
+				"image_url": "https://i.pinimg.com/564x/c7/70/41/c7704149a8493803d553d7b71ab012f1.jpg",
+				"name": "Пирог",
+				"price": 23000
+			}, {
+				"description": "Грибы, глаза, лук, 150г.",
+				"id": "2",
+				"image_url": "https://i.pinimg.com/564x/42/47/3c/42473cfc00666daad31c5ac82e39da44.jpg",
+				"name": "Грибы",
+				"price": 18000
+			}, {
+				"description": "Петушок, палочка, 30г.",
+				"id": "3",
+				"image_url": "https://i.pinimg.com/564x/8c/bb/ef/8cbbefe6f7642b7cb618ffcefe7a129a.jpg",
+				"name": "Леденец",
+				"price": 7000
+			}]
+		}, {
+			"city_id": "5d8ef38c31f77b52cf0642dd",
+			"id": "5d8efb9331f77b52cf0644ff",
+			"name": "Глазная рапсодия",
+			"positions": [{
+				"description": "Свинина, говядина, желе, 200г.",
+				"id": "1",
+				"image_url": "https://i.pinimg.com/564x/c4/b2/eb/c4b2eb2e666f0982fb8ccb7feed8bac6.jpg",
+				"name": "холодец",
+				"price": 10000
+			}, {
+				"description": "Говядина, желе, 200г.",
+				"id": "2",
+				"image_url": "https://i.pinimg.com/564x/e4/93/ea/e493ea9da7b91a376fd18b1455e22f99.jpg",
+				"name": "студень",
+				"price": 20000
+			}, {
+				"description": "Свинина, овощи, желе, 200г.",
+				"id": "3",
+				"image_url": "https://i.pinimg.com/564x/b7/fc/df/b7fcdfa9e15bee33502147998b23039d.jpg",
+				"name": "заливное",
+				"price": 30000
+			}]
+		}],
+		"city_id": "5d8ef38c31f77b52cf0642dd",
+		"date_time": "2019-09-29T14:45:00.000Z",
+		"duration": 600,
+		"name": "Рязань"
+	}, {
+		"cafes": [{
+			"city_id": "5d8ef34231f77b52cf0642c3",
+			"id": "5d8f00fd31f77b52cf064660",
+			"name": "Красная зорька",
+			"positions": [{
+				"description": "Свекла, свинина, капуста, 300г.",
+				"id": "1",
+				"image_url": "https://i.pinimg.com/564x/0a/4b/ea/0a4bea67b80df90b6ba0f14d4788859c.jpg",
+				"name": "Борщ",
+				"price": 20000
+			}, {
+				"description": "Макароны, мясо, 250г.",
+				"id": "2",
+				"image_url": "https://i.pinimg.com/564x/bb/43/b8/bb43b8916a375b4792bcb3d61119bab2.jpg",
+				"name": "Макароны с мясом",
+				"price": 25000
+			}, {
+				"description": "Картофель, фарш, 280г.",
+				"id": "3",
+				"image_url": "https://i.pinimg.com/564x/20/e7/18/20e718537a596dbdd55622fc3c04ca9c.jpg",
+				"name": "Пюре с котлетами",
+				"price": 25000
+			}]
+		}, {
+			"city_id": "5d8ef34231f77b52cf0642c3",
+			"id": "5d8f02b731f77b52cf0646d0",
+			"name": "Кацусика",
+			"positions": [{
+				"description": "Лосось, 80г.",
+				"id": "1",
+				"image_url": "https://i.pinimg.com/564x/c9/52/61/c95261823d51d1948c5f3551635e4c74.jpg",
+				"name": "Сашими из лосося",
+				"price": 50000
+			}, {
+				"description": "Тунец, 80г.",
+				"id": "2",
+				"image_url": "https://i.pinimg.com/564x/e4/22/f8/e422f80c90550c474601c6c515a47ec4.jpg",
+				"name": "Сашими из тунца",
+				"price": 70000
+			}, {
+				"description": "Рыба, рис, 300г.",
+				"id": "3",
+				"image_url": "https://i.pinimg.com/564x/ac/1c/1a/ac1c1a1fba019cc598581d5b0382e48b.jpg",
+				"name": "Сет суши",
+				"price": 130000
+			}, {
+				"description": "Лапша, лук, жижа 250г.",
+				"id": "4",
+				"image_url": "https://i.pinimg.com/564x/66/0c/d0/660cd0f8728f570894ce585640e861c4.jpg",
+				"name": "Удон",
+				"price": 20000
+			}, {
+				"description": "Нори, рис, рыба, 120г.",
+				"id": "5",
+				"image_url": "https://i.pinimg.com/564x/9c/e2/64/9ce264c54117ebbe11a479a19a9b55d2.jpg",
+				"name": "Норимаки",
+				"price": 18000
+			}]
+		}, {
+			"city_id": "5d8ef34231f77b52cf0642c3",
+			"id": "5d8f036831f77b52cf064701",
+			"name": "У Али",
+			"positions": [{
+				"description": "Баранина, лук, 300г.",
+				"id": "1",
+				"image_url": "https://i.pinimg.com/564x/0a/69/05/0a69059629c5cf0cc49e6278960863ba.jpg",
+				"name": "шашлык",
+				"price": 50000
+			}, {
+				"description": "Говядина, фасоль, 250г.",
+				"id": "2",
+				"image_url": "https://i.pinimg.com/564x/c1/57/b4/c157b40a9fee60840a98d754f77da505.jpg",
+				"name": "хашлама",
+				"price": 20000
+			}, {
+				"description": "Листья винограда, мясо, 300г.",
+				"id": "3",
+				"image_url": "https://i.pinimg.com/564x/13/97/b6/1397b69590537b8a628bb47d11c6027c.jpg",
+				"name": "долма",
+				"price": 15000
+			}]
+		}, {
+			"city_id": "5d8ef34231f77b52cf0642c3",
+			"id": "5d8f04b631f77b52cf064757",
+			"name": "У Мiнску",
+			"positions": [{
+				"description": "Картофель, сметана, 250г.",
+				"id": "1",
+				"image_url": "https://i.pinimg.com/564x/f7/92/96/f7929662f3ef8c74ecf8710acce39d89.jpg",
+				"name": "Драники",
+				"price": 30000
+			}, {
+				"description": "Свекла, яйцо, водичка, 350г.",
+				"id": "2",
+				"image_url": "https://i.pinimg.com/564x/57/6f/c4/576fc44b8c757ff72a2dd88cca180ba8.jpg",
+				"name": "Холодник",
+				"price": 25000
+			}, {
+				"description": "Свинина, картофель, гарнир, 230г.",
+				"id": "3",
+				"image_url": "https://i.pinimg.com/564x/eb/11/79/eb1179330f9085885f81144be9be8ca3.jpg",
+				"name": "Колдуны",
+				"price": 35000
+			}, {
+				"description": "Картофель, говядина, сметана, 300г.",
+				"id": "4",
+				"image_url": "https://i.pinimg.com/564x/ab/84/3b/ab843be10b15d79ff5137e01067a413f.jpg",
+				"name": "Запеканка",
+				"price": 23000
+			}]
+		}],
+		"city_id": "5d8ef34231f77b52cf0642c3",
+		"date_time": "2019-09-29T17:35:00.000Z",
+		"duration": 600,
+		"name": "Москва"
+	}],
+	"train_name": "\"025\" Воронеж - Москва",
+	"train_number": "025"
+}

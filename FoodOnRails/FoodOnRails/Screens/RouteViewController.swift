@@ -18,21 +18,30 @@ class RouteViewController: UIViewController, UITableViewDataSource, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
+        
+        let customImageBarBtn1 = UIBarButtonItem(
+            image: UIImage(named: "btnTicket.png")?.withRenderingMode(.alwaysOriginal),
+        style: .plain, target: self, action: #selector(handleTicketTap))
+        navigationItem.leftBarButtonItems = [customImageBarBtn1]
+        
+        let customImageBarBtn2 = UIBarButtonItem(
+            image: UIImage(named: "btnCart.png")?.withRenderingMode(.alwaysOriginal),
+        style: .plain, target: self, action: #selector(handleCarttTap))
+        navigationItem.rightBarButtonItems = [customImageBarBtn2]
     }
     
+    
+    @objc func handleTicketTap() {
+        self.performSegue(withIdentifier: "openTicket", sender: self)
+    }
+    
+    @objc func handleCarttTap() {
+        self.performSegue(withIdentifier: "openCart", sender: self)
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return routeRespone?.stops.count ?? 0
     }
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 0
-//        switch tableView {
-//        case self.tableView:
-//            return /*routeRespone?.stops.count ??*/ 0
-//        default:
-//            return 0
-//       }
-//    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "RouteTableViewCell", for: indexPath) as! RouteTableViewCell
@@ -47,19 +56,11 @@ class RouteViewController: UIViewController, UITableViewDataSource, UITableViewD
             let diffHour = components.hour ?? 0
             let diffMinute = components.minute ?? 0
             
-//            let interval = date.
-//            let diffDate = arriveDat - date
             cell.timerValue.text = String(diffHour) + ":" + String(diffMinute)
         }
         
         //cell.timerValue.text = String((self.routeRespone?.stops[indexPath.row].duration ?? 0)/60) + " мин"
         cell.arriveTime.text = (self.routeRespone?.stops[indexPath.row].dateTime.string(with: "dd HH:mm") ?? "") + " " + String((self.routeRespone?.stops[indexPath.row].duration ?? 0)/60) + " мин"
-        //cell.textLabel?.text = "adsf"//self.data[indexPath.row]
-//        if indexPath.row == 0 {
-//            cell.accessoryType = .disclosureIndicator
-//        } else {
-//            cell.accessoryType = .none
-//        }
         return cell
     }
     
