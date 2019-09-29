@@ -109,6 +109,7 @@
                     <navigationItem key="navigationItem" id="st3-Gi-heK"/>
                     <connections>
                         <outlet property="cameraBtn" destination="n4C-Rl-Okx" id="LW3-Hl-irB"/>
+                        <outlet property="container" destination="wd1-HN-fb3" id="Btb-IH-X54"/>
                         <outlet property="okBtn" destination="zWZ-Xo-9iC" id="AIj-d2-fYh"/>
                         <outlet property="ticketNumber" destination="3g8-fB-7fQ" id="2PV-Zx-NwP"/>
                     </connections>
@@ -440,18 +441,20 @@
                                                             <color key="textColor" red="0.45882352939999999" green="0.51764705879999995" blue="0.56078431370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="139 ₽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wrd-p1-BjF">
-                                                            <rect key="frame" x="316" y="146" width="74" height="32"/>
+                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bQm-lQ-hYP">
+                                                            <rect key="frame" x="307" y="146" width="75" height="32"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXr-57-x0C">
-                                                            <rect key="frame" x="307" y="146" width="67" height="30"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="139 ₽" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wrd-p1-BjF">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="74" height="32"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
                                                             <color key="backgroundColor" red="0.93333333330000001" green="0.19215686269999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </button>
+                                                        </view>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <constraints>
@@ -750,7 +753,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="XDu-lf-3SF"/>
         <segue reference="bFc-yg-FAm"/>
-        <segue reference="Cr6-EP-u5C"/>
+        <segue reference="SUR-xk-F4Y"/>
         <segue reference="3Rr-R8-B75"/>
         <segue reference="IP4-6W-Kat"/>
     </inferredMetricsTieBreakers>

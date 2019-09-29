@@ -11,6 +11,7 @@ import BarcodeScanner
 
 class TicketViewController: UIViewController {
     
+    @IBOutlet var container: UIView!
     @IBOutlet var ticketNumber: UITextField!
     @IBOutlet var clearBtn: UIButton!
     @IBOutlet var cameraBtn: UIButton!
@@ -22,6 +23,12 @@ class TicketViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ticketId = "20073776662724"
+        container.layer.masksToBounds = true
+        container.layer.cornerRadius = 10
+        
+        okBtn.layer.masksToBounds = true
+        okBtn.layer.cornerRadius = 10
+
     }
     
     @IBAction func handleScannerPresent(_ sender: Any, forEvent event: UIEvent) {
